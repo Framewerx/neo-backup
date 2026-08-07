@@ -1,28 +1,23 @@
 name: Export enabled Neo agents
-
 on:
   workflow_dispatch:
-
+  schedule:
+    - cron: '23 24 * * *'
 permissions:
   contents: write
   pull-requests: write
-
 jobs:
   export:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
       - name: Install dependencies
         run: pip install requests
-
       - name: Export enabled agents
         env:
           NEO_API_KEY: ${{ secrets.NEO_API_KEY }}
@@ -32,7 +27,6 @@ jobs:
             --out neo-backup \
             --include-versions \
             --state ENABLED
-
       - name: Create pull request
         uses: peter-evans/create-pull-request@v6
         with:

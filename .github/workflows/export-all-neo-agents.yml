@@ -2,7 +2,7 @@ name: Export enabled Neo agents
 on:
   workflow_dispatch:
   schedule:
-    - cron: '23 24 * * *'
+    - cron: '23 30 * * *'
 permissions:
   contents: write
   pull-requests: write

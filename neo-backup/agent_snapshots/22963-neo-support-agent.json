@@ -4,8 +4,8 @@
   "agent_settings": {
     "custom_instructions": "[see separate markdown file]",
     "custom_instructions_file": "agent_text/custom-instructions/22963-neo-support-agent/agent-settings-custom-instructions.md",
-    "model": "GPT5_4_MINI",
-    "reasoning_effort": "HIGH",
+    "model": "GPT5_6_TERRA",
+    "reasoning_effort": "XHIGH",
     "report_test_via": "INTERNAL_TICKET_NOTE",
     "subagent_fanout_enabled": false,
     "test_mode": false,
@@ -14,6 +14,7 @@
   },
   "audience": "MSP",
   "autonomy_type": "CONVERSATIONAL",
+  "callback_settings": null,
   "entity_type": "TICKET",
   "id": "22963",
   "integrations": {
@@ -160,11 +161,18 @@
     "servicenow": {
       "permissions": []
     },
+    "syncro": {
+      "permissions": []
+    },
+    "syncro_rmm": {
+      "permissions": []
+    },
     "vsax_rmm": {
       "permissions": []
     }
   },
   "name": "Neo Support Agent",
+  "schedule": null,
   "state": "ENABLED",
   "toolbox": {
     "tool_settings_by_type": {

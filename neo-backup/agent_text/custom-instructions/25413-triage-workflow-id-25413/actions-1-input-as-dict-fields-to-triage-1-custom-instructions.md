@@ -12,6 +12,8 @@ Set AI Eligibility = Ineligible if any are true:
 - User is unable to work 
 - User is unable to sign in to computer or VDI 
 - Request states "URGENT" or "ASAP" 
+- Request is an offboarding request for former FWI employee 
+- You are unable to provide any support other than standard triage and scheduling 
 
 Write exactly Eligible or Ineligible.
 

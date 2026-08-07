@@ -8,6 +8,116 @@
     "name": "cs-technician (workflow ID: 23781)",
     "state": "ENABLED",
     "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-07T16:28:30.256581Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23781",
+    "name": "cs-technician (workflow ID: 23781)",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-07-24T20:15:00.131301Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23781",
+    "name": "cs-technician (workflow ID: 23781)",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-07-24T16:39:43.689082Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23781",
+    "name": "cs-technician (workflow ID: 23781)",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-07-24T15:00:49.827296Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23781",
+    "name": "cs-technician (workflow ID: 23781)",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-07-23T22:41:06.355109Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23781",
+    "name": "cs-technician (workflow ID: 23781)",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-07-23T22:16:39.162412Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23781",
+    "name": "cs-technician (workflow ID: 23781)",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-07-23T20:53:06.119706Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23781",
+    "name": "cs-technician (workflow ID: 23781)",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-07-23T20:46:06.500593Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23781",
+    "name": "cs-technician (workflow ID: 23781)",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-07-23T15:50:22.248590Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23781",
+    "name": "cs-technician (workflow ID: 23781)",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-07-21T15:37:58.275445Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23781",
+    "name": "cs-technician (workflow ID: 23781)",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
     "version_timestamp": "2026-07-14T16:42:14.393975Z"
   },
   {

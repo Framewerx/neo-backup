@@ -8,6 +8,72 @@
     "name": "datto-backup-closer",
     "state": "ENABLED",
     "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-08-07T14:46:21.678878Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "entity_type": "TICKET",
+    "id": "25538",
+    "name": "datto-backup-closer",
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-08-07T14:45:58.111987Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "entity_type": "TICKET",
+    "id": "25538",
+    "name": "datto-backup-closer",
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-30T21:57:50.499202Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "entity_type": "TICKET",
+    "id": "25538",
+    "name": "datto-backup-closer",
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-28T19:19:14.030012Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "entity_type": "TICKET",
+    "id": "25538",
+    "name": "datto-backup-closer",
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-27T16:17:26.804694Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "entity_type": "TICKET",
+    "id": "25538",
+    "name": "datto-backup-closer",
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-24T20:15:14.740862Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "entity_type": "TICKET",
+    "id": "25538",
+    "name": "datto-backup-closer",
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
     "version_timestamp": "2026-07-17T19:14:07.750745Z"
   },
   {

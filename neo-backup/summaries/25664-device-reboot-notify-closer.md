@@ -17,4 +17,4 @@
 - `agent_text/custom-instructions/` = extracted multiline instructions for clean diffs
 - `summaries/` = short human-readable summaries
 
-_Exported at 2026-07-20T16:18:32.741334+00:00_
+_Exported at 2026-08-07T22:52:03.492494+00:00_

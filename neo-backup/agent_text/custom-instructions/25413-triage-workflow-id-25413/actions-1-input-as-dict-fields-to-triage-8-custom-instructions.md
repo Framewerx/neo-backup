@@ -1,6 +1,7 @@
 STANDARD TITLE FORMAT: [SERVICE DOMAIN] – [ISSUE SUMMARY]
   - Enforce the following standard by default on all triaged tickets
 
+- Never change the title if the ticket is in the 210 Queue or Ticket Category
 - Never remove urgency indicators from original ticket title. 
 - Never remove the word "Termination" from ticket titles. 
 - Add Urgency indicator to title only if an Urgency Indicator is explicitly stated in ticket description or original title.   

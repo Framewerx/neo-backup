@@ -1,0 +1,141 @@
+{
+  "access": "ALL_USERS",
+  "actions": [
+    {
+      "action_type": "TRIGGER_ANOTHER_WORKFLOW",
+      "id": "3494a825-f849-4978-b24e-eb61d728eb2c",
+      "input_as_dict": {
+        "bypass_filter_ticket_conditions": false,
+        "workflow_id_to_trigger": 23782
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    },
+    {
+      "action_type": "FIND_ENTITIES",
+      "id": "48cff0e6-dd6e-435c-aa3e-a2ae0287c24d",
+      "input_as_dict": {
+        "opportunity_conditions": {
+          "conditions": {
+            "combinator": "or",
+            "rules": []
+          }
+        },
+        "project_conditions": {
+          "conditions": {
+            "combinator": "or",
+            "rules": []
+          }
+        },
+        "result_entity_type": "TICKET",
+        "ticket_conditions": {
+          "conditions": {
+            "combinator": "and",
+            "rules": [
+              {
+                "combinator": "and",
+                "rules": [
+                  {
+                    "field": "status",
+                    "id": null,
+                    "operator": "=",
+                    "value": "Customer Note Added",
+                    "valueProviderInput": null
+                  }
+                ]
+              },
+              {
+                "combinator": "or",
+                "rules": [
+                  {
+                    "field": "assignedResourceID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "29682976",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "assignedResourceID",
+                    "id": null,
+                    "operator": "null",
+                    "value": "",
+                    "valueProviderInput": null
+                  }
+                ]
+              },
+              {
+                "combinator": "or",
+                "rules": [
+                  {
+                    "field": "queueID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "100 SD-Issues",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "queueID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "110 SD-Access",
+                    "valueProviderInput": null
+                  }
+                ]
+              }
+            ]
+          },
+          "custom_field_conditions": null,
+          "workload_conditions": null
+        },
+        "time_entry_conditions": {
+          "conditions": {
+            "combinator": "and",
+            "rules": []
+          }
+        }
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    },
+    {
+      "action_type": "ADD_TICKET_NOTE",
+      "id": "c5ba3ba0-fcfb-448c-8cf1-d90f3b4b28e9",
+      "input_as_dict": {
+        "ask_for_feedback": false,
+        "custom_instructions": "[see separate markdown file]",
+        "custom_instructions_file": "agent_text/custom-instructions/24918-sd-noteadded-watchdog/actions-2-input-as-dict-custom-instructions.md",
+        "note_type": "Internal Note",
+        "use_custom_instructions": true
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    }
+  ],
+  "agent_settings": null,
+  "audience": "MSP",
+  "autonomy_type": "CHAINED_ACTIONS",
+  "callback_settings": null,
+  "entity_type": "TICKET",
+  "id": "24918",
+  "integrations": null,
+  "name": "sd-noteadded-watchdog",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [
+      "2026-06-24T19:19:00Z"
+    ],
+    "time_period": {
+      "interval": 10,
+      "unit": "MINUTE"
+    },
+    "timezone": "America/Edmonton"
+  },
+  "state": "ENABLED",
+  "toolbox": null,
+  "trigger_type": "SCHEDULED"
+}

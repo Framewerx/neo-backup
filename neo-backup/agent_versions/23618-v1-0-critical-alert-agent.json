@@ -8,6 +8,105 @@
     "name": "(v1.0) critical-alert-agent",
     "state": "ENABLED",
     "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-07T17:07:22.923850Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23618",
+    "name": "(v1.0) critical-alert-agent",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-06T16:03:40.771943Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23618",
+    "name": "(v1.0) critical-alert-agent",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-06T16:02:39.958903Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23618",
+    "name": "(v1.0) critical-alert-agent",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-06T15:57:58.203118Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23618",
+    "name": "(v1.0) critical-alert-agent",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-05T22:32:05.217286Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23618",
+    "name": "(v1.0) critical-alert-agent",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-05T22:29:26.728577Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23618",
+    "name": "(v1.0) critical-alert-agent",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-05T22:22:16.825984Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23618",
+    "name": "(v1.0) critical-alert-agent",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-05T22:21:45.894350Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23618",
+    "name": "(v1.0) critical-alert-agent",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-05T22:21:31.130847Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23618",
+    "name": "(v1.0) critical-alert-agent",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
     "version_timestamp": "2026-07-14T14:42:50.615555Z"
   },
   {

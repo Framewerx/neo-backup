@@ -2,16 +2,8 @@
   "access": "ALL_USERS",
   "actions": [
     {
-      "action_type": "AGENTIC",
-      "id": "3efaa0d9-5c11-4bcb-b052-d84e4247a983",
-      "input_as_dict": {},
-      "output": {
-        "credits_consumed": 0
-      }
-    },
-    {
       "action_type": "FIND_ENTITIES",
-      "id": "aa433c51-b01b-49ba-b103-49541249d779",
+      "id": "09c9c13a-b6d9-42da-8324-b98f656e293c",
       "input_as_dict": {
         "opportunity_conditions": {
           "conditions": {
@@ -37,28 +29,28 @@
                     "field": "assignedResourceID",
                     "id": null,
                     "operator": "=",
-                    "value": "Billy Nguyen",
+                    "value": "29682929",
                     "valueProviderInput": null
                   },
                   {
                     "field": "assignedResourceID",
                     "id": null,
                     "operator": "=",
-                    "value": "Devon Young",
+                    "value": "29682942",
                     "valueProviderInput": null
                   },
                   {
                     "field": "assignedResourceID",
                     "id": null,
                     "operator": "=",
-                    "value": "James Reid",
+                    "value": "29682972",
                     "valueProviderInput": null
                   },
                   {
                     "field": "assignedResourceID",
                     "id": null,
                     "operator": "=",
-                    "value": "Kurt Verbeeck",
+                    "value": "29682986",
                     "valueProviderInput": null
                   }
                 ]
@@ -453,7 +445,7 @@
                 "field": "creatorResourceID",
                 "id": null,
                 "operator": "!=",
-                "value": "Migration Tool - AP API",
+                "value": "29682999",
                 "valueProviderInput": null
               }
             ]
@@ -468,6 +460,14 @@
           }
         }
       },
+      "output": {
+        "credits_consumed": 0
+      }
+    },
+    {
+      "action_type": "AGENTIC",
+      "id": "cdf3688f-85a0-46f3-a8cc-5a34cf10a7a9",
+      "input_as_dict": {},
       "output": {
         "credits_consumed": 0
       }
@@ -486,6 +486,19 @@
   },
   "audience": "MSP",
   "autonomy_type": "AGENTIC",
+  "callback_settings": {
+    "entity_type": "TICKET",
+    "run_only_once_per_entity": true,
+    "target_changes": [
+      {
+        "change_type": "MANUAL_ONLY",
+        "source_value": null,
+        "target_field": null,
+        "target_value": null,
+        "target_workflow_id": null
+      }
+    ]
+  },
   "entity_type": "TICKET",
   "id": "25873",
   "integrations": {
@@ -1159,11 +1172,25 @@
     "servicenow": {
       "permissions": []
     },
+    "syncro": {
+      "permissions": []
+    },
+    "syncro_rmm": {
+      "permissions": []
+    },
     "vsax_rmm": {
       "permissions": []
     }
   },
   "name": "(draft) RI-SD",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [],
+    "time_period": null,
+    "timezone": "Europe/London"
+  },
   "state": "ENABLED",
   "toolbox": {
     "tool_settings_by_type": {
@@ -1174,11 +1201,13 @@
         "halo_outcome_id": null,
         "use_custom_autotask_note_type": false
       },
+      "COMPUTE_BUSINESS_ELAPSED_TIME": {},
       "DELAY": {},
       "FIND_CONFIGURATIONS": {},
       "FIND_DOCUMENTATION": {},
       "FIND_PSA_CONTACTS": {},
       "FIND_TICKETS_BY_CONTENT": {},
+      "GENERATE_ARTIFACT": {},
       "GENERATE_PASSWORD": {},
       "GENERATE_SECURE_LINK": {},
       "GET_FIELDS_AGENT_CAN_UPDATE": {},
@@ -1190,6 +1219,9 @@
       "LOOKUP_AVAILABLE": {},
       "RECALL_MEMORY": {},
       "REVIEW_PAST_RUN": {},
+      "SANDBOX_BASH": {},
+      "SANDBOX_READ_FILE": {},
+      "SANDBOX_WRITE_FILE": {},
       "SEND_EMAIL_TO_INTERNAL_TEAM": {
         "ask_for_feedback": true,
         "emails": [

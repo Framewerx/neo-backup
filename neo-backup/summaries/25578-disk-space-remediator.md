@@ -6,9 +6,9 @@
 - Type: `AGENTIC`
 - Trigger: `TRIGGERED`
 - Entity: `TICKET`
-- Version records exported: `9`
-- Tools configured: 17
-- Tool sample: DELAY, FIND_CONFIGURATIONS, FIND_DOCUMENTATION, FIND_PSA_CONTACTS, FIND_TICKETS_BY_CONTENT … (+12 more)
+- Version records exported: `22`
+- Tools configured: 19
+- Tool sample: COMPUTE_BUSINESS_ELAPSED_TIME, DELAY, FIND_CONFIGURATIONS, FIND_DOCUMENTATION, FIND_PSA_CONTACTS … (+14 more)
 - Extracted text files: 1
 - `agent_text/custom-instructions/25578-disk-space-remediator/agent-settings-custom-instructions.md`
 
@@ -20,4 +20,4 @@
 - `agent_text/custom-instructions/` = extracted multiline instructions for clean diffs
 - `summaries/` = short human-readable summaries
 
-_Exported at 2026-07-20T16:18:32.077868+00:00_
+_Exported at 2026-08-07T22:52:03.205363+00:00_

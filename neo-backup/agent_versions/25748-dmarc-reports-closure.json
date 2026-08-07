@@ -8,6 +8,17 @@
     "name": "DMARC-reports-closure",
     "state": "ENABLED",
     "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-21T15:55:41.194355Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "entity_type": "TICKET",
+    "id": "25748",
+    "name": "DMARC-reports-closure",
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
     "version_timestamp": "2026-07-17T19:24:52.263506Z"
   },
   {

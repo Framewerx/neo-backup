@@ -4,6 +4,8 @@
 
 - If onsite work appears possible but is not explicitly requested or verified, prefer Queue 100 — SD-Issues for remote troubleshooting first. Onsite/PS routing must be confirmed before assigning Queue 400.
 
+- (Policy override) Kaseya SOC/EDR security alerts — including "SOC Isolation Failed," "Inhibit System Recovery Detected," compromise/threat-detection findings, and similar Kaseya-sourced EDR/security alerts — are Queue 100 (SD-Issues) for human security review, even if the ticket originated from monitoring/automation. Treat the same as Fortinet SOC malware detection and RocketCyber reports below.
+
 GENERAL DECISION PROCESS
 
 1. Determine if the request is:
@@ -23,6 +25,7 @@ Special Instructions:
  -If the ticket already has 210 queue assigned, preserve the existing queue 
 - (Policy override)  If the ticket already has 210 queue assigned, preserve the existing queue, 
     Unless: Ticket is a Nimble System Report or regarding Nimble Systems
+    Unless: Ticket is user submitted request & created by DattoRMM API (or similar),  
 - (Policy override) unquoted provisioning or deployment requests MUST be directed to Sales Team. There are no exceptions. If something new needs to be purchased, assign queue 500. 
 - (Policy override) requests for invoices or billing documentation (e.g., invoice copy/details, attach vendor invoice) MUST be directed to Sales Team — assign queue 500.
 - (Policy override) End-user submitted issues via the RMM desktop shortcut (Created by: DattoRMM API but end-user originated) MUST be directed to Service Desk — assign queue 100.
@@ -39,12 +42,17 @@ Examples:
 - Fortinet SOC malware detection tickets
 - Adding printers to end user computers 
 - key/door fob replacements 
+- User reported phishing/spam emails 
+- Messages or voicemails or reports by RocketCyber
+- Voicemail Messages left by users
+- Kaseya SOC/EDR security alerts (e.g., "SOC Isolation Failed", "Inhibit System Recovery Detected")
 
 Do NOT use for:
 - Access changes
 - Provisioning requests
 - Planned deployments
 - Cisco Jabber Requests or Related Issues 
+- Changing voicemail settings or accounts
 
 QUEUE 110 — SD-Access
 Use for user access and permission changes.
@@ -70,6 +78,17 @@ Examples:
 - NVIDIA license consumption reports
 - Automated remediation tickets
 
+Do Not User for: 
+- End user reported issues 
+
+QUEUE 205 - CS-Problem
+Use for: 
+- Tickets assigned the 298 ticket category 
+- Neo related tickets 
+
+Do not use: 
+- For anything else 
+
 QUEUE 400 — PS-Request
 Use for planned service work, onsite work, and changes.
 Examples:
@@ -86,6 +105,7 @@ Examples:
 - File permission redesign
 - Door access investigations
 - Alarm investigations
+- Changing voicemail settings or accounts
 
 QUEUE 410 — PS-Deployments
 Use for routine deployments.
@@ -140,6 +160,7 @@ Examples:
 - TrueNAS monitoring issues
 - Data center infrastructure incidents
 - Nimble Storage – WARNING
+- HVAC Monitoring Alerts
 
 Do NOT use for provisioning requests.
 

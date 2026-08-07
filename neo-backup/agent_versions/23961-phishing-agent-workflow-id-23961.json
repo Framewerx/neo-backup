@@ -8,6 +8,39 @@
     "name": "phishing-agent (workflow ID: 23961) ",
     "state": "ENABLED",
     "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-07-30T17:04:41.336896Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23961",
+    "name": "phishing-agent (workflow ID: 23961) ",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-07-27T19:20:38.457547Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23961",
+    "name": "phishing-agent (workflow ID: 23961) ",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-07-21T15:42:12.753258Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "entity_type": "TICKET",
+    "id": "23961",
+    "name": "phishing-agent (workflow ID: 23961) ",
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
     "version_timestamp": "2026-07-14T16:39:19.999159Z"
   },
   {

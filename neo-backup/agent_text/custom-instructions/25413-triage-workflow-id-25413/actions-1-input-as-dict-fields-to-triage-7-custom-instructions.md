@@ -8,7 +8,6 @@ CRITICAL
 - No internet
 - Critical failure
 - Severe operational impact
-- "Urgent" in subject/title
 - SOS source email
 
 HIGH
@@ -20,6 +19,9 @@ HIGH
 - Not a complete outage
 - User unable to sign in 
 - User unable to work 
+- User terminations/offboarding requests 
+- "Urgent" in subject/title
+
 
 MODERATE
 - Access Point issues

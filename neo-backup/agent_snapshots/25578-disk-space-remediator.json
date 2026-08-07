@@ -2,8 +2,16 @@
   "access": "ALL_USERS",
   "actions": [
     {
+      "action_type": "AGENTIC",
+      "id": "05a2e7ae-fb3a-403b-bae6-dfdcc1f1f041",
+      "input_as_dict": {},
+      "output": {
+        "credits_consumed": 0
+      }
+    },
+    {
       "action_type": "FIND_ENTITIES",
-      "id": "422a5382-f35e-4aa1-87f1-6d75eff49e24",
+      "id": "d9e19162-e0f8-43e3-80c5-a69b93fe2390",
       "input_as_dict": {
         "opportunity_conditions": {
           "conditions": {
@@ -61,10 +69,10 @@
                 ]
               },
               {
-                "field": "status",
+                "field": "creatorResourceID",
                 "id": null,
-                "operator": "!=",
-                "value": "Waiting Technician",
+                "operator": "=",
+                "value": "29682934",
                 "valueProviderInput": null
               }
             ]
@@ -79,14 +87,6 @@
           }
         }
       },
-      "output": {
-        "credits_consumed": 0
-      }
-    },
-    {
-      "action_type": "AGENTIC",
-      "id": "5629bd78-f40a-47f7-9534-304a19f0b81a",
-      "input_as_dict": {},
       "output": {
         "credits_consumed": 0
       }
@@ -105,6 +105,19 @@
   },
   "audience": "MSP",
   "autonomy_type": "AGENTIC",
+  "callback_settings": {
+    "entity_type": "TICKET",
+    "run_only_once_per_entity": false,
+    "target_changes": [
+      {
+        "change_type": "CREATE",
+        "source_value": null,
+        "target_field": null,
+        "target_value": null,
+        "target_workflow_id": null
+      }
+    ]
+  },
   "entity_type": "TICKET",
   "id": "25578",
   "integrations": {
@@ -409,7 +422,7 @@
           "update_allowed_fields": null
         },
         {
-          "access_level": "READ_ONLY",
+          "access_level": "READ_WRITE",
           "allow_delete": false,
           "allow_merge": null,
           "client_facing_settings": null,
@@ -778,14 +791,29 @@
     "servicenow": {
       "permissions": []
     },
+    "syncro": {
+      "permissions": []
+    },
+    "syncro_rmm": {
+      "permissions": []
+    },
     "vsax_rmm": {
       "permissions": []
     }
   },
   "name": "disk-space-remediator",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [],
+    "time_period": null,
+    "timezone": "America/Edmonton"
+  },
   "state": "ENABLED",
   "toolbox": {
     "tool_settings_by_type": {
+      "COMPUTE_BUSINESS_ELAPSED_TIME": {},
       "DELAY": {},
       "FIND_CONFIGURATIONS": {},
       "FIND_DOCUMENTATION": {},
@@ -796,6 +824,7 @@
       "GET_SYNCED_DEVICE_COUNTS": {},
       "GET_TICKET_SUMMARIES": {},
       "LIST_END_CLIENT_COMPANIES": {},
+      "LIST_SCHEDULED_WORKFLOW_RUNS": {},
       "LIST_SYNCED_DEVICES": {},
       "LOOKUP_AVAILABLE": {},
       "RECALL_MEMORY": {},
@@ -817,13 +846,15 @@
       },
       "REVIEW_PAST_RUN": {},
       "SEND_TEAMS_MESSAGE_TO_INTERNAL_TEAM": {
+        "allowed_channels": [],
         "allowed_users": [
           {
             "id": "31f43227-e9e1-4cb6-8cb8-97966acf2b1b",
             "name": "Kodi Todd"
           }
         ],
-        "limit_to_allowed_users": true
+        "channel_scope": "OFF",
+        "user_scope": "SPECIFIC"
       },
       "TRIGGER_OR_SCHEDULE_WORKFLOW": {
         "disable_self_scheduling": false,
@@ -834,5 +865,5 @@
     }
   },
   "trigger_type": "TRIGGERED",
-  "version_timestamp": "2026-07-16T17:47:10.983147Z"
+  "version_timestamp": "2026-07-29T17:32:09.643872Z"
 }

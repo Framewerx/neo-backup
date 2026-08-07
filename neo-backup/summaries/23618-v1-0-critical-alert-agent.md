@@ -6,9 +6,9 @@
 - Type: `AGENTIC`
 - Trigger: `TRIGGERED`
 - Entity: `TICKET`
-- Version records exported: `30`
-- Tools configured: 16
-- Tool sample: DELAY, FIND_CONFIGURATIONS, FIND_DOCUMENTATION, FIND_PSA_CONTACTS, FIND_TICKETS_BY_CONTENT … (+11 more)
+- Version records exported: `39`
+- Tools configured: 21
+- Tool sample: COMPUTE_BUSINESS_ELAPSED_TIME, DELAY, FIND_CONFIGURATIONS, FIND_DOCUMENTATION, FIND_PSA_CONTACTS … (+16 more)
 - Extracted text files: 1
 - `agent_text/custom-instructions/23618-v1-0-critical-alert-agent/agent-settings-custom-instructions.md`
 
@@ -20,4 +20,4 @@
 - `agent_text/custom-instructions/` = extracted multiline instructions for clean diffs
 - `summaries/` = short human-readable summaries
 
-_Exported at 2026-07-20T16:18:18.257855+00:00_
+_Exported at 2026-08-07T22:51:54.612511+00:00_

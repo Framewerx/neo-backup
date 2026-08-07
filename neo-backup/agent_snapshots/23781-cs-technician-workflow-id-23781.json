@@ -3,7 +3,7 @@
   "actions": [
     {
       "action_type": "FIND_ENTITIES",
-      "id": "cee46797-065a-4f09-8317-dba34da6ed2e",
+      "id": "2b137ae1-5fc9-4e57-902f-8e948428035a",
       "input_as_dict": {
         "opportunity_conditions": {
           "conditions": {
@@ -22,6 +22,79 @@
           "conditions": {
             "combinator": "and",
             "rules": [
+              {
+                "combinator": "and",
+                "rules": [
+                  {
+                    "field": "subIssueType",
+                    "id": "61903876-ebc1-4525-a2ee-1d6e29f26104",
+                    "operator": "!=",
+                    "value": "Disk Usage Monitor",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "subIssueType",
+                    "id": "61903876-ebc1-4525-a2ee-1d6e29f26104",
+                    "operator": "!=",
+                    "value": "Online Status Monitor",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "subIssueType",
+                    "id": "61903876-ebc1-4525-a2ee-1d6e29f26104",
+                    "operator": "!=",
+                    "value": "Access Point/WiFi",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "subIssueType",
+                    "id": "61903876-ebc1-4525-a2ee-1d6e29f26104",
+                    "operator": "!=",
+                    "value": "Connectivity",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "subIssueType",
+                    "id": "61903876-ebc1-4525-a2ee-1d6e29f26104",
+                    "operator": "!=",
+                    "value": "Switches",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "subIssueType",
+                    "id": "61903876-ebc1-4525-a2ee-1d6e29f26104",
+                    "operator": "!=",
+                    "value": "Backup Monitor",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "subIssueType",
+                    "id": "61903876-ebc1-4525-a2ee-1d6e29f26104",
+                    "operator": "!=",
+                    "value": "Workstation Backup",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "combinator": "and",
+                    "rules": [
+                      {
+                        "field": "title",
+                        "id": null,
+                        "operator": "doesNotContain",
+                        "value": "Device went Offline",
+                        "valueProviderInput": null
+                      },
+                      {
+                        "field": "title",
+                        "id": null,
+                        "operator": "doesNotContain",
+                        "value": "to the cloud",
+                        "valueProviderInput": null
+                      }
+                    ]
+                  }
+                ]
+              },
               {
                 "combinator": "or",
                 "rules": [
@@ -404,36 +477,10 @@
                 ]
               },
               {
-                "combinator": "or",
-                "rules": [
-                  {
-                    "field": "subIssueType",
-                    "id": null,
-                    "operator": "=",
-                    "value": "Access Point/WiFi",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "subIssueType",
-                    "id": null,
-                    "operator": "=",
-                    "value": "Online Status",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "subIssueType",
-                    "id": null,
-                    "operator": "=",
-                    "value": "SAAS Alerts",
-                    "valueProviderInput": null
-                  }
-                ]
-              },
-              {
                 "field": "creatorResourceID",
                 "id": null,
                 "operator": "!=",
-                "value": "Migration Tool - AP API",
+                "value": "29682999",
                 "valueProviderInput": null
               },
               {
@@ -441,6 +488,13 @@
                 "id": null,
                 "operator": "!=",
                 "value": "Waiting Technician",
+                "valueProviderInput": null
+              },
+              {
+                "field": "ticketCategory",
+                "id": null,
+                "operator": "!=",
+                "value": "298 AI Tools",
                 "valueProviderInput": null
               },
               {
@@ -471,7 +525,7 @@
     },
     {
       "action_type": "AGENTIC",
-      "id": "f9841e17-f50f-4a17-ac5c-a75742f75c1b",
+      "id": "504816d7-f4ac-4662-993d-3d0c53a34950",
       "input_as_dict": {},
       "output": {
         "credits_consumed": 0
@@ -491,6 +545,19 @@
   },
   "audience": "MSP",
   "autonomy_type": "AGENTIC",
+  "callback_settings": {
+    "entity_type": "TICKET",
+    "run_only_once_per_entity": false,
+    "target_changes": [
+      {
+        "change_type": "WORKFLOW_FINISHED",
+        "source_value": null,
+        "target_field": null,
+        "target_value": null,
+        "target_workflow_id": 25413
+      }
+    ]
+  },
   "entity_type": "TICKET",
   "id": "23781",
   "integrations": {
@@ -1184,19 +1251,35 @@
     "servicenow": {
       "permissions": []
     },
+    "syncro": {
+      "permissions": []
+    },
+    "syncro_rmm": {
+      "permissions": []
+    },
     "vsax_rmm": {
       "permissions": []
     }
   },
   "name": "cs-technician (workflow ID: 23781)",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [],
+    "time_period": null,
+    "timezone": "Europe/Madrid"
+  },
   "state": "ENABLED",
   "toolbox": {
     "tool_settings_by_type": {
+      "COMPUTE_BUSINESS_ELAPSED_TIME": {},
       "CREATE_TICKET": {
         "require_technician_approval": true
       },
       "DELAY": {},
       "EXECUTE_RMM_SCRIPT": {
+        "approved_scripts": [],
         "require_technician_approval": false
       },
       "FIND_CONFIGURATIONS": {},
@@ -1206,6 +1289,7 @@
       "FIND_RMM_SCRIPT": {},
       "FIND_TICKETS_BY_CONTENT": {},
       "FIND_TICKETS_BY_METADATA": {},
+      "GENERATE_ARTIFACT": {},
       "GENERATE_PASSWORD": {},
       "GENERATE_SECURE_LINK": {},
       "GET_FIELD_OPTIONS": {},
@@ -1213,6 +1297,7 @@
       "GET_SYNCED_DEVICE_COUNTS": {},
       "GET_TICKET_SUMMARIES": {},
       "LIST_END_CLIENT_COMPANIES": {},
+      "LIST_SCHEDULED_WORKFLOW_RUNS": {},
       "LIST_SYNCED_DEVICES": {},
       "LOOKUP_AVAILABLE": {},
       "MERGE_TICKETS": {},
@@ -1230,7 +1315,11 @@
         ]
       },
       "REVIEW_PAST_RUN": {},
+      "SANDBOX_BASH": {},
+      "SANDBOX_READ_FILE": {},
+      "SANDBOX_WRITE_FILE": {},
       "SEND_TEAMS_MESSAGE_TO_INTERNAL_TEAM": {
+        "allowed_channels": [],
         "allowed_users": [
           {
             "id": "20ae680a-659f-4374-9581-0286720c9938",
@@ -1241,7 +1330,8 @@
             "name": "Kodi Todd"
           }
         ],
-        "limit_to_allowed_users": true
+        "channel_scope": "OFF",
+        "user_scope": "SPECIFIC"
       },
       "TRIGGER_OR_SCHEDULE_WORKFLOW": {
         "disable_self_scheduling": false,
@@ -1254,5 +1344,5 @@
     }
   },
   "trigger_type": "TRIGGERED",
-  "version_timestamp": "2026-07-14T16:42:14.393975Z"
+  "version_timestamp": "2026-08-07T16:28:30.256581Z"
 }

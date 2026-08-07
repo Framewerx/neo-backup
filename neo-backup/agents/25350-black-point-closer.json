@@ -157,10 +157,24 @@
   "agent_settings": null,
   "audience": "MSP",
   "autonomy_type": "CHAINED_ACTIONS",
+  "callback_settings": null,
   "entity_type": "TICKET",
   "id": "25350",
   "integrations": null,
   "name": "black-point-closer",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [
+      "2026-07-06T19:00:00Z"
+    ],
+    "time_period": {
+      "interval": 1,
+      "unit": "HOUR"
+    },
+    "timezone": "America/Edmonton"
+  },
   "state": "ENABLED",
   "toolbox": null,
   "trigger_type": "SCHEDULED"

@@ -119,13 +119,14 @@
       "input_as_dict": {
         "autotask_note_publish_name": "All Autotask Users",
         "autotask_note_type_name": "Email Note",
+        "autotask_wf_udf_field_name": "Notify Contact by Email",
         "custom_instructions": "[see separate markdown file]",
         "custom_instructions_file": "agent_text/custom-instructions/25400-ad-micro-triage/actions-2-input-as-dict-custom-instructions.md",
         "include_random_delay": false,
         "notification_mode": "CUSTOM_TICKET_NOTE",
         "skip_notifications_for_closed_tickets": true,
         "use_custom_instructions": true,
-        "use_udf_field_to_trigger_autotask_workflow": false
+        "use_udf_field_to_trigger_autotask_workflow": true
       },
       "output": {
         "credits_consumed": 0
@@ -171,6 +172,30 @@
               {
                 "combinator": "or",
                 "rules": [
+                  {
+                    "combinator": "or",
+                    "rules": [
+                      {
+                        "combinator": "and",
+                        "rules": [
+                          {
+                            "field": "companyID",
+                            "id": null,
+                            "operator": "=",
+                            "value": "FWI",
+                            "valueProviderInput": null
+                          },
+                          {
+                            "field": "description",
+                            "id": null,
+                            "operator": "contains",
+                            "value": "gothamsteakhouse.com",
+                            "valueProviderInput": null
+                          }
+                        ]
+                      }
+                    ]
+                  },
                   {
                     "field": "companyID",
                     "id": null,
@@ -238,13 +263,6 @@
                     "field": "companyID",
                     "id": null,
                     "operator": "=",
-                    "value": "Cowley & Company",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
                     "value": "DISTRICT DEVELOPMENTS CORP",
                     "valueProviderInput": null
                   },
@@ -273,13 +291,6 @@
                     "field": "companyID",
                     "id": null,
                     "operator": "=",
-                    "value": "Fine Choice Foods",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
                     "value": "First Nations Fisheries Council",
                     "valueProviderInput": null
                   },
@@ -301,7 +312,28 @@
                     "field": "companyID",
                     "id": null,
                     "operator": "=",
+                    "value": "Gotham Steakhouse",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "companyID",
+                    "id": null,
+                    "operator": "=",
                     "value": "Grand View Distribution",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "companyID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "HCA",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "companyID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "Indigenous Stewardship Fund",
                     "valueProviderInput": null
                   },
                   {
@@ -322,7 +354,21 @@
                     "field": "companyID",
                     "id": null,
                     "operator": "=",
+                    "value": "Laughlin & Company",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "companyID",
+                    "id": null,
+                    "operator": "=",
                     "value": "Laughlinlaw & Company",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "companyID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "MCC",
                     "valueProviderInput": null
                   },
                   {
@@ -336,13 +382,6 @@
                     "field": "companyID",
                     "id": null,
                     "operator": "=",
-                    "value": "Milltown Marina & Boatyard Ltd.",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
                     "value": "Milltown Marina",
                     "valueProviderInput": null
                   },
@@ -350,7 +389,7 @@
                     "field": "companyID",
                     "id": null,
                     "operator": "=",
-                    "value": "Musqueam Capital Corporation",
+                    "value": "NGC",
                     "valueProviderInput": null
                   },
                   {
@@ -358,13 +397,6 @@
                     "id": null,
                     "operator": "=",
                     "value": "NGM",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "Northview Golf & Country Club",
                     "valueProviderInput": null
                   },
                   {
@@ -379,13 +411,6 @@
                     "id": null,
                     "operator": "=",
                     "value": "Pacific Rim Industrial Insulation",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "Richmond Christian School",
                     "valueProviderInput": null
                   },
                   {
@@ -455,7 +480,14 @@
                     "field": "companyID",
                     "id": null,
                     "operator": "=",
-                    "value": "UGC - University Golf ",
+                    "value": "UGC",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "companyID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "UGC",
                     "valueProviderInput": null
                   },
                   {
@@ -463,13 +495,6 @@
                     "id": null,
                     "operator": "=",
                     "value": "Union Gospel Mission",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "University Golf Club",
                     "valueProviderInput": null
                   },
                   {
@@ -524,10 +549,10 @@
                 ]
               },
               {
-                "field": "creatorResourceID",
+                "field": "source",
                 "id": null,
                 "operator": "!=",
-                "value": "Kodi Todd",
+                "value": "Insourced",
                 "valueProviderInput": null
               }
             ]
@@ -548,15 +573,50 @@
       "output": {
         "credits_consumed": 0
       }
+    },
+    {
+      "action_type": "BUILD_MESSAGE",
+      "id": "afc911fd-8f5f-49f5-ba89-bc3a8278c5fc",
+      "input_as_dict": {
+        "include_company_custom_fields": false,
+        "include_service_call_details": false,
+        "include_ticket_custom_fields": true,
+        "instructions": "Required Customer Communication Standards\n\nEvery customer-facing response must:\n\n1. Begin with a professional greeting.\n2. Acknowledge receipt of the ticket or request.\n3. Express genuine concern for the issue and its business impact.\n4. Maintain a professional, friendly, and reassuring tone.\n5. Avoid discussing internal departments, teams, workflows, escalation paths, staffing, schedules, technician availability, queue position, or estimated timing.\n6. Avoid making commitments or promises regarding response or resolution timelines.\n7. Focus solely on confirming the issue has been received and is being reviewed.",
+        "message_type": "CUSTOMER_FACING"
+      },
+      "output": {
+        "credits_consumed": 0
+      }
     }
   ],
   "agent_settings": null,
   "audience": "MSP",
   "autonomy_type": "CHAINED_ACTIONS",
+  "callback_settings": {
+    "entity_type": "TICKET",
+    "run_only_once_per_entity": true,
+    "target_changes": [
+      {
+        "change_type": "CREATE",
+        "source_value": null,
+        "target_field": null,
+        "target_value": null,
+        "target_workflow_id": null
+      }
+    ]
+  },
   "entity_type": "TICKET",
   "id": "25400",
   "integrations": null,
   "name": "ad-micro-triage",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [],
+    "time_period": null,
+    "timezone": "America/Sao_Paulo"
+  },
   "state": "ENABLED",
   "toolbox": null,
   "trigger_type": "TRIGGERED"

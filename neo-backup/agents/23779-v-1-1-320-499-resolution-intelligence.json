@@ -357,6 +357,28 @@
   },
   "audience": "MSP",
   "autonomy_type": "AGENTIC",
+  "callback_settings": {
+    "entity_type": "TICKET",
+    "run_only_once_per_entity": false,
+    "target_changes": [
+      {
+        "change_type": "UPDATE",
+        "source_value": null,
+        "target_field": "status",
+        "target_value": "Completed",
+        "target_workflow_id": null
+      },
+      {
+        "change_type": "UPDATE",
+        "source_value": null,
+        "target_field": "status",
+        "target_value": [
+          "Completed (With CSAT)"
+        ],
+        "target_workflow_id": null
+      }
+    ]
+  },
   "entity_type": "TICKET",
   "id": "23779",
   "integrations": {
@@ -962,11 +984,25 @@
     "servicenow": {
       "permissions": []
     },
+    "syncro": {
+      "permissions": []
+    },
+    "syncro_rmm": {
+      "permissions": []
+    },
     "vsax_rmm": {
       "permissions": []
     }
   },
   "name": "(v.1.1) 320-499-resolution_intelligence",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [],
+    "time_period": null,
+    "timezone": "Europe/London"
+  },
   "state": "ENABLED",
   "toolbox": {
     "tool_settings_by_type": {
@@ -1002,13 +1038,15 @@
         ]
       },
       "SEND_TEAMS_MESSAGE_TO_INTERNAL_TEAM": {
+        "allowed_channels": [],
         "allowed_users": [
           {
             "id": "31f43227-e9e1-4cb6-8cb8-97966acf2b1b",
             "name": "Kodi Todd"
           }
         ],
-        "limit_to_allowed_users": true
+        "channel_scope": "OFF",
+        "user_scope": "SPECIFIC"
       },
       "UPDATE_TICKET_FIELDS": {
         "fields_allowed_to_update": [

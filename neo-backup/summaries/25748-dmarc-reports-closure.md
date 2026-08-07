@@ -6,7 +6,7 @@
 - Type: `CHAINED_ACTIONS`
 - Trigger: `SCHEDULED`
 - Entity: `TICKET`
-- Version records exported: `7`
+- Version records exported: `8`
 - Integrations: 0
 
 ## Export contents
@@ -17,4 +17,4 @@
 - `agent_text/custom-instructions/` = extracted multiline instructions for clean diffs
 - `summaries/` = short human-readable summaries
 
-_Exported at 2026-07-20T16:18:33.092398+00:00_
+_Exported at 2026-08-07T22:52:03.618305+00:00_

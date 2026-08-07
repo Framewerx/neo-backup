@@ -3,7 +3,7 @@
   "actions": [
     {
       "action_type": "FIND_ENTITIES",
-      "id": "a0f5f613-8dbe-4312-b52a-773c35646638",
+      "id": "443cf04c-b177-489b-a379-47c2ba3ae429",
       "input_as_dict": {
         "opportunity_conditions": {
           "conditions": {
@@ -27,23 +27,31 @@
                 "rules": [
                   {
                     "field": "assignedResourceID",
+                    "id": null,
                     "operator": "=",
-                    "value": "Billy Nguyen"
+                    "value": "Billy Nguyen",
+                    "valueProviderInput": null
                   },
                   {
                     "field": "assignedResourceID",
+                    "id": null,
                     "operator": "=",
-                    "value": "Devon Young"
+                    "value": "Devon Young",
+                    "valueProviderInput": null
                   },
                   {
                     "field": "assignedResourceID",
+                    "id": null,
                     "operator": "=",
-                    "value": "James Reid"
+                    "value": "James Reid",
+                    "valueProviderInput": null
                   },
                   {
                     "field": "assignedResourceID",
+                    "id": null,
                     "operator": "=",
-                    "value": "Kurt Verbeeck"
+                    "value": "Kurt Verbeeck",
+                    "valueProviderInput": null
                   }
                 ]
               },
@@ -451,7 +459,7 @@
     },
     {
       "action_type": "AGENTIC",
-      "id": "dcd089fa-9fb6-44e0-9c5c-8d4516b4e4a5",
+      "id": "c97348ce-afb3-43bd-a053-3a0c1dcbcd9a",
       "input_as_dict": {},
       "output": {
         "credits_consumed": 0
@@ -471,6 +479,30 @@
   },
   "audience": "MSP",
   "autonomy_type": "AGENTIC",
+  "callback_settings": {
+    "entity_type": "TICKET",
+    "run_only_once_per_entity": true,
+    "target_changes": [
+      {
+        "change_type": "UPDATE",
+        "source_value": null,
+        "target_field": "status",
+        "target_value": [
+          "Complete"
+        ],
+        "target_workflow_id": null
+      },
+      {
+        "change_type": "UPDATE",
+        "source_value": null,
+        "target_field": "status",
+        "target_value": [
+          "Completed (With CSAT)"
+        ],
+        "target_workflow_id": null
+      }
+    ]
+  },
   "entity_type": "TICKET",
   "id": "23650",
   "integrations": {
@@ -1144,11 +1176,25 @@
     "servicenow": {
       "permissions": []
     },
+    "syncro": {
+      "permissions": []
+    },
+    "syncro_rmm": {
+      "permissions": []
+    },
     "vsax_rmm": {
       "permissions": []
     }
   },
   "name": "(v2.3) sd-resolution-intelligence",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [],
+    "time_period": null,
+    "timezone": "Europe/London"
+  },
   "state": "ENABLED",
   "toolbox": {
     "tool_settings_by_type": {
@@ -1198,5 +1244,5 @@
     }
   },
   "trigger_type": "TRIGGERED",
-  "version_timestamp": "2026-07-16T21:13:56.899620Z"
+  "version_timestamp": "2026-07-22T15:03:32.127261Z"
 }

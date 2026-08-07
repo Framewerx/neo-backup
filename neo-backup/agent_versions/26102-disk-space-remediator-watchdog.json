@@ -1,0 +1,35 @@
+[
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "entity_type": "TICKET",
+    "id": "26102",
+    "name": "disk-space-remediator-watchdog",
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-28T15:43:56.174464Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "entity_type": "TICKET",
+    "id": "26102",
+    "name": "disk-space-remediator-watchdog",
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-24T21:29:38.095319Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "entity_type": "TICKET",
+    "id": "26102",
+    "name": "disk-space-remediator-watchdog",
+    "state": "DISABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-23T22:07:25.914457Z"
+  }
+]

@@ -99,6 +99,13 @@
                     "field": "queueID",
                     "id": null,
                     "operator": "=",
+                    "value": "205 CS-Problem",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "queueID",
+                    "id": null,
+                    "operator": "=",
                     "value": "210 CS-Monitoring Alert",
                     "valueProviderInput": null
                   }
@@ -126,6 +133,13 @@
                     "id": null,
                     "operator": "contains",
                     "value": "Boot verification failed",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "title",
+                    "id": null,
+                    "operator": "contains",
+                    "value": "Bootable Screenshot",
                     "valueProviderInput": null
                   },
                   {
@@ -162,13 +176,36 @@
                     "operator": "contains",
                     "value": "[Datto Backup]",
                     "valueProviderInput": null
+                  },
+                  {
+                    "field": "title",
+                    "id": null,
+                    "operator": "contains",
+                    "value": "[Datto SIRIS Backup]",
+                    "valueProviderInput": null
                   }
                 ]
               },
               {
                 "field": "companyID",
+                "id": null,
                 "operator": "=",
-                "value": "FWI"
+                "value": "FWI",
+                "valueProviderInput": null
+              },
+              {
+                "field": "creatorResourceID",
+                "id": null,
+                "operator": "=",
+                "value": "4",
+                "valueProviderInput": null
+              },
+              {
+                "field": "priority",
+                "id": null,
+                "operator": "!=",
+                "value": "Critical",
+                "valueProviderInput": null
               }
             ]
           },
@@ -190,12 +227,26 @@
   "agent_settings": null,
   "audience": "MSP",
   "autonomy_type": "CHAINED_ACTIONS",
+  "callback_settings": null,
   "entity_type": "TICKET",
   "id": "25538",
   "integrations": null,
   "name": "datto-backup-closer",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [
+      "2026-07-06T19:00:00Z"
+    ],
+    "time_period": {
+      "interval": 10,
+      "unit": "MINUTE"
+    },
+    "timezone": "America/Edmonton"
+  },
   "state": "ENABLED",
   "toolbox": null,
   "trigger_type": "SCHEDULED",
-  "version_timestamp": "2026-07-17T19:14:07.750745Z"
+  "version_timestamp": "2026-08-07T14:46:21.678878Z"
 }

@@ -3,7 +3,7 @@
   "actions": [
     {
       "action_type": "FIND_ENTITIES",
-      "id": "6b44a2b0-6be6-46ec-8dbf-56c62c376112",
+      "id": "3ba1bba1-0149-4d1e-9081-e75ed7bdcb83",
       "input_as_dict": {
         "opportunity_conditions": {
           "conditions": {
@@ -51,6 +51,18 @@
                         "field": "queueID",
                         "id": null,
                         "operator": "=",
+                        "value": "010 Client Portal",
+                        "valueProviderInput": null
+                      }
+                    ]
+                  },
+                  {
+                    "combinator": "and",
+                    "rules": [
+                      {
+                        "field": "queueID",
+                        "id": null,
+                        "operator": "=",
                         "value": "100 SD-Issues",
                         "valueProviderInput": null
                       },
@@ -91,7 +103,7 @@
                     "field": "assignedResourceID",
                     "id": null,
                     "operator": "=",
-                    "value": "Logan Brooks",
+                    "value": "29682976",
                     "valueProviderInput": null
                   },
                   {
@@ -492,7 +504,7 @@
     },
     {
       "action_type": "AGENTIC",
-      "id": "85794e6a-434c-4c1d-abc6-2cb6f5abee4b",
+      "id": "e97ff9fc-5e1c-4c02-b0dd-16be59e618a0",
       "input_as_dict": {},
       "output": {
         "credits_consumed": 0
@@ -512,6 +524,44 @@
   },
   "audience": "MSP",
   "autonomy_type": "AGENTIC",
+  "callback_settings": {
+    "entity_type": "TICKET",
+    "run_only_once_per_entity": false,
+    "target_changes": [
+      {
+        "change_type": "CUSTOMER_REPLIED",
+        "source_value": null,
+        "target_field": null,
+        "target_value": null,
+        "target_workflow_id": null
+      },
+      {
+        "change_type": "UPDATE",
+        "source_value": null,
+        "target_field": "status",
+        "target_value": [
+          "Customer Note Added"
+        ],
+        "target_workflow_id": null
+      },
+      {
+        "change_type": "UPDATE",
+        "source_value": null,
+        "target_field": "status",
+        "target_value": [
+          "Reopened"
+        ],
+        "target_workflow_id": null
+      },
+      {
+        "change_type": "WORKFLOW_FINISHED",
+        "source_value": null,
+        "target_field": null,
+        "target_value": null,
+        "target_workflow_id": 25413
+      }
+    ]
+  },
   "entity_type": "TICKET",
   "id": "23782",
   "integrations": {
@@ -1217,14 +1267,29 @@
     "servicenow": {
       "permissions": []
     },
+    "syncro": {
+      "permissions": []
+    },
+    "syncro_rmm": {
+      "permissions": []
+    },
     "vsax_rmm": {
       "permissions": []
     }
   },
   "name": "sd-technician (workflow ID:23782) ",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [],
+    "time_period": null,
+    "timezone": "Europe/Madrid"
+  },
   "state": "ENABLED",
   "toolbox": {
     "tool_settings_by_type": {
+      "COMPUTE_BUSINESS_ELAPSED_TIME": {},
       "DELAY": {},
       "FIND_CONFIGURATIONS": {},
       "FIND_DOCUMENTATION": {},
@@ -1233,6 +1298,7 @@
       "FIND_RMM_SCRIPT": {},
       "FIND_TICKETS_BY_CONTENT": {},
       "FIND_TICKETS_BY_METADATA": {},
+      "GENERATE_ARTIFACT": {},
       "GENERATE_PASSWORD": {},
       "GENERATE_SECURE_LINK": {},
       "GET_DEVICE_SOFTWARE": {},
@@ -1240,6 +1306,7 @@
       "GET_SYNCED_DEVICE_COUNTS": {},
       "GET_TICKET_SUMMARIES": {},
       "LIST_END_CLIENT_COMPANIES": {},
+      "LIST_SCHEDULED_WORKFLOW_RUNS": {},
       "LIST_SYNCED_DEVICES": {},
       "LOOKUP_AVAILABLE": {},
       "RECALL_MEMORY": {},
@@ -1260,6 +1327,9 @@
         ]
       },
       "REVIEW_PAST_RUN": {},
+      "SANDBOX_BASH": {},
+      "SANDBOX_READ_FILE": {},
+      "SANDBOX_WRITE_FILE": {},
       "SEND_MESSAGE_TO_ADDITIONAL_CONTACT": {
         "autotask_note_publish_id": null,
         "autotask_note_type_id": null,
@@ -1274,6 +1344,7 @@
         "use_udf_field_to_trigger_autotask_workflow": true
       },
       "SEND_TEAMS_MESSAGE_TO_INTERNAL_TEAM": {
+        "allowed_channels": [],
         "allowed_users": [
           {
             "id": "20ae680a-659f-4374-9581-0286720c9938",
@@ -1296,7 +1367,8 @@
             "name": "Adam Price"
           }
         ],
-        "limit_to_allowed_users": true
+        "channel_scope": "OFF",
+        "user_scope": "SPECIFIC"
       },
       "TRIGGER_OR_SCHEDULE_WORKFLOW": {
         "disable_self_scheduling": true,

@@ -6,9 +6,9 @@
 - Type: `AGENTIC`
 - Trigger: `TRIGGERED`
 - Entity: `TICKET`
-- Version records exported: `65`
-- Tools configured: 25
-- Tool sample: DELAY, FIND_CONFIGURATIONS, FIND_DOCUMENTATION, FIND_PSA_COMPANIES, FIND_PSA_CONTACTS … (+20 more)
+- Version records exported: `77`
+- Tools configured: 31
+- Tool sample: COMPUTE_BUSINESS_ELAPSED_TIME, DELAY, FIND_CONFIGURATIONS, FIND_DOCUMENTATION, FIND_PSA_COMPANIES … (+26 more)
 - Extracted text files: 1
 - `agent_text/custom-instructions/23782-sd-technician-workflow-id-23782/agent-settings-custom-instructions.md`
 
@@ -20,4 +20,4 @@
 - `agent_text/custom-instructions/` = extracted multiline instructions for clean diffs
 - `summaries/` = short human-readable summaries
 
-_Exported at 2026-07-20T16:18:27.008156+00:00_
+_Exported at 2026-08-07T22:51:59.278404+00:00_

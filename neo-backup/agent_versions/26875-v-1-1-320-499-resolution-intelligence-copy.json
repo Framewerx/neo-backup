@@ -1,0 +1,28 @@
+[
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "26875",
+    "name": "(v.1.1) 320-499-resolution_intelligence (Copy)",
+    "source_template_id": null,
+    "state": "DISABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-25T22:18:35.940722Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "26875",
+    "name": "(v.1.1) 320-499-resolution_intelligence (Copy)",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-12T16:28:13.856441Z"
+  }
+]

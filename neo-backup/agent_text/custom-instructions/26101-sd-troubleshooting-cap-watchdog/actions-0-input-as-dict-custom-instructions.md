@@ -1,0 +1,1 @@
+Always add internal note: "Escalated by sd-troubleshooting-cap-watchdog -- this ticket exceeded the 2-round troubleshooting cap in sd-technician's instructions with no human intervention. This indicates a compliance miss in the agent's own cap enforcement, not just a hard ticket -- worth checking whether the instruction wording needs further tightening."

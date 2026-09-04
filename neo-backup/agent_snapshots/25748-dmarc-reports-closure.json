@@ -87,6 +87,25 @@
                 "combinator": "or",
                 "rules": [
                   {
+                    "field": "priority",
+                    "id": null,
+                    "operator": "=",
+                    "value": "High",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "priority",
+                    "id": null,
+                    "operator": "=",
+                    "value": "Informational",
+                    "valueProviderInput": null
+                  }
+                ]
+              },
+              {
+                "combinator": "or",
+                "rules": [
+                  {
                     "field": "queueID",
                     "id": null,
                     "operator": "=",
@@ -127,25 +146,6 @@
                 "combinator": "or",
                 "rules": [
                   {
-                    "field": "subIssueType",
-                    "id": null,
-                    "operator": "=",
-                    "value": "Email Delivery",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "subIssueType",
-                    "id": null,
-                    "operator": "null",
-                    "value": "",
-                    "valueProviderInput": null
-                  }
-                ]
-              },
-              {
-                "combinator": "or",
-                "rules": [
-                  {
                     "field": "title",
                     "id": null,
                     "operator": "contains",
@@ -163,7 +163,21 @@
                     "field": "title",
                     "id": null,
                     "operator": "contains",
+                    "value": "DMARC – Report",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "title",
+                    "id": null,
+                    "operator": "contains",
                     "value": "[DMARC] – Aggregate report",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "title",
+                    "id": null,
+                    "operator": "contains",
+                    "value": "aggregate report from google.com",
                     "valueProviderInput": null
                   }
                 ]
@@ -188,12 +202,29 @@
   "agent_settings": null,
   "audience": "MSP",
   "autonomy_type": "CHAINED_ACTIONS",
+  "callback_settings": null,
+  "created_via": null,
   "entity_type": "TICKET",
   "id": "25748",
   "integrations": null,
   "name": "DMARC-reports-closure",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [
+      "2026-07-15T14:34:00Z"
+    ],
+    "time_period": {
+      "interval": 1,
+      "unit": "HOUR"
+    },
+    "timezone": "America/Edmonton"
+  },
+  "source_template_id": null,
   "state": "ENABLED",
   "toolbox": null,
   "trigger_type": "SCHEDULED",
-  "version_timestamp": "2026-07-17T19:24:52.263506Z"
+  "unreleased_permission_groups": [],
+  "version_timestamp": "2026-08-12T14:32:37.449873Z"
 }

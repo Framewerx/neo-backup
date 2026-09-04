@@ -1,0 +1,153 @@
+{
+  "access": "ALL_USERS",
+  "actions": [
+    {
+      "action_type": "TRIGGER_ANOTHER_WORKFLOW",
+      "id": "76d6e160-5c71-4df3-9fb6-03da2af1956e",
+      "input_as_dict": {
+        "bypass_filter_ticket_conditions": false,
+        "workflow_id_to_trigger": 23779
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    },
+    {
+      "action_type": "ADD_TICKET_NOTE",
+      "id": "9fb67067-995e-4770-b29d-1f25f9b4c838",
+      "input_as_dict": {
+        "ask_for_feedback": false,
+        "custom_instructions": "[see separate markdown file]",
+        "custom_instructions_file": "agent_text/custom-instructions/26877-resolution-intelligence-watchdog/actions-1-input-as-dict-custom-instructions.md",
+        "note_type": "Internal Note",
+        "use_custom_instructions": true
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    },
+    {
+      "action_type": "FIND_ENTITIES",
+      "id": "f3b2c329-aede-43d6-842f-725ff5247f61",
+      "input_as_dict": {
+        "opportunity_conditions": {
+          "conditions": {
+            "combinator": "or",
+            "rules": []
+          }
+        },
+        "project_conditions": {
+          "conditions": {
+            "combinator": "or",
+            "rules": []
+          }
+        },
+        "result_entity_type": "TICKET",
+        "ticket_conditions": {
+          "conditions": {
+            "combinator": "and",
+            "rules": [
+              {
+                "combinator": "or",
+                "rules": [
+                  {
+                    "field": "queueID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "320 SA-Corrective",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "queueID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "400 PS-Request",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "queueID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "410 PS-Deployments",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "queueID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "420 PS-Projects",
+                    "valueProviderInput": null
+                  }
+                ]
+              },
+              {
+                "combinator": "or",
+                "rules": [
+                  {
+                    "field": "status",
+                    "id": null,
+                    "operator": "=",
+                    "value": "Complete",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "status",
+                    "id": null,
+                    "operator": "=",
+                    "value": "Completed (With CSAT)",
+                    "valueProviderInput": null
+                  }
+                ]
+              },
+              {
+                "field": "completedDate",
+                "id": null,
+                "operator": ">",
+                "value": "2026-08-10",
+                "valueProviderInput": null
+              }
+            ]
+          },
+          "custom_field_conditions": null,
+          "workload_conditions": null
+        },
+        "time_entry_conditions": {
+          "conditions": {
+            "combinator": "or",
+            "rules": []
+          }
+        }
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    }
+  ],
+  "agent_settings": null,
+  "audience": "MSP",
+  "autonomy_type": "CHAINED_ACTIONS",
+  "callback_settings": null,
+  "created_via": null,
+  "entity_type": "TICKET",
+  "id": "26877",
+  "integrations": null,
+  "name": "resolution-intelligence-watchdog",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [
+      "2026-08-12T16:41:00Z"
+    ],
+    "time_period": {
+      "interval": 30,
+      "unit": "MINUTE"
+    },
+    "timezone": "America/Edmonton"
+  },
+  "source_template_id": null,
+  "state": "DISABLED",
+  "toolbox": null,
+  "trigger_type": "SCHEDULED",
+  "unreleased_permission_groups": []
+}

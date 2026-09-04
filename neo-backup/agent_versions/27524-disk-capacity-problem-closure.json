@@ -1,0 +1,28 @@
+[
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "27524",
+    "name": "disk-capacity-problem-closure",
+    "source_template_id": null,
+    "state": "DISABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-27T14:41:05.993710Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "27524",
+    "name": "disk-capacity-problem-closure",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-26T21:04:32.102876Z"
+  }
+]

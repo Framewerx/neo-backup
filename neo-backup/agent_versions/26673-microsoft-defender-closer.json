@@ -1,0 +1,15 @@
+[
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "26673",
+    "name": "Microsoft-defender-closer",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-08-07T15:46:16.275568Z"
+  }
+]

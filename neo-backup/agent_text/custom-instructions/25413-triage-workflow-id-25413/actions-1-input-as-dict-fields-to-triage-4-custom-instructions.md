@@ -1,1 +1,1 @@
-- Adding or modifying existing mailbox delegation is considers break fix
+Default to 24 hours after ticket creation.

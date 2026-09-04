@@ -17,10 +17,13 @@ Outcome Summary:
 - Final Worktype
 
 - AI Eligibility: [eligible/ineligible]
+- Escalation Reason
 
 Related Issues:
 (List related ticket numbers, Their respective titles, and the primary contact on each)
 - [TicketNumber, TicketTitle, Contact]
 - [TicketNumber, TicketTitle, Contact]
 - [TicketNumber, TicketTitle, Contact]
+
+Resolution Plan:  
 ```

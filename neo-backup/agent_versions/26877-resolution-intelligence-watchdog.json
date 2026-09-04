@@ -1,0 +1,41 @@
+[
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "26877",
+    "name": "resolution-intelligence-watchdog",
+    "source_template_id": null,
+    "state": "DISABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-08-12T17:06:31.543093Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "26877",
+    "name": "resolution-intelligence-watchdog",
+    "source_template_id": null,
+    "state": "DISABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-08-12T17:06:17.763271Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "26877",
+    "name": "resolution-intelligence-watchdog",
+    "source_template_id": null,
+    "state": "DISABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-08-12T16:43:55.072950Z"
+  }
+]

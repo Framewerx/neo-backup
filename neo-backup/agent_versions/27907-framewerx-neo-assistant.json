@@ -1,0 +1,28 @@
+[
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CONVERSATIONAL",
+    "created_via": null,
+    "entity_type": "NONE",
+    "id": "27907",
+    "name": "Framewerx NEO Assistant ",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "NONE",
+    "version_timestamp": "2026-09-04T19:53:44.544252Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CONVERSATIONAL",
+    "created_via": null,
+    "entity_type": "NONE",
+    "id": "27907",
+    "name": "New Chat Agent",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "NONE",
+    "version_timestamp": "2026-09-04T19:50:50.242972Z"
+  }
+]

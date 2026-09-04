@@ -3,7 +3,7 @@
   "actions": [
     {
       "action_type": "FIND_ENTITIES",
-      "id": "10335859-26ec-43d8-a1d6-b13d3af544b5",
+      "id": "73506643-3ada-4ada-a97e-9fcbcab3c4cd",
       "input_as_dict": {
         "opportunity_conditions": {
           "conditions": {
@@ -26,234 +26,67 @@
                 "combinator": "or",
                 "rules": [
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
+                    "id": null,
                     "operator": "=",
-                    "value": "ABC"
+                    "value": "FW-Managed - Internal NW",
+                    "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
+                    "id": null,
                     "operator": "=",
-                    "value": "ASB"
+                    "value": "FW-Managed",
+                    "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
+                    "id": null,
                     "operator": "=",
-                    "value": "BL"
+                    "value": "FW360 - Internal NW",
+                    "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
+                    "id": null,
                     "operator": "=",
-                    "value": "BLR"
+                    "value": "FW360",
+                    "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
+                    "id": null,
                     "operator": "=",
-                    "value": "BLS"
+                    "value": "Hosted Service",
+                    "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
+                    "id": null,
                     "operator": "=",
-                    "value": "BTC"
+                    "value": "Misc Services",
+                    "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
+                    "id": null,
                     "operator": "=",
-                    "value": "CBC"
+                    "value": "NeuralWerx",
+                    "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
+                    "id": null,
                     "operator": "=",
-                    "value": "CFS"
+                    "value": "Residential",
+                    "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
+                    "id": null,
                     "operator": "=",
-                    "value": "CGC"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "CLP"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "CMW"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "CSI"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "FAK"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "FCL"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "FFS"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "FWI"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "G3D"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "GRV"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "HFM"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "HIE"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "IIS"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "KES"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "KVR"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "LCF"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "LDW"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "LIL"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "MSD"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "MXM"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "NGM"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "NKG"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "OMG"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "PCM"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "PVB"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "QBC"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "QMI"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "RCC"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "RDC"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "RWM"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "SCI"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "SCP"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "SEC"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "SEG"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "SI"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "SPM"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "SSL"
-                  },
-                  {
-                    "field": "companyID",
-                    "operator": "=",
-                    "value": "VCS"
+                    "value": "T&M",
+                    "valueProviderInput": null
                   }
                 ]
               },
@@ -308,13 +141,6 @@
                     "valueProviderInput": null
                   }
                 ]
-              },
-              {
-                "field": "companyLocationID",
-                "id": null,
-                "operator": "=",
-                "value": "",
-                "valueProviderInput": null
               }
             ]
           },
@@ -337,7 +163,7 @@
     },
     {
       "action_type": "AGENTIC",
-      "id": "ce0922b5-1d74-483d-927b-f8f2279a41c6",
+      "id": "e42b6655-b339-4922-a461-e999cac89b61",
       "input_as_dict": {},
       "output": {
         "credits_consumed": 0
@@ -357,6 +183,29 @@
   },
   "audience": "MSP",
   "autonomy_type": "AGENTIC",
+  "callback_settings": {
+    "entity_type": "TICKET",
+    "run_only_once_per_entity": true,
+    "target_changes": [
+      {
+        "change_type": "UPDATE",
+        "source_value": null,
+        "target_field": "status",
+        "target_value": "Completed",
+        "target_workflow_id": null
+      },
+      {
+        "change_type": "UPDATE",
+        "source_value": null,
+        "target_field": "status",
+        "target_value": [
+          "Completed (With CSAT)"
+        ],
+        "target_workflow_id": null
+      }
+    ]
+  },
+  "created_via": null,
   "entity_type": "TICKET",
   "id": "23779",
   "integrations": {
@@ -755,6 +604,9 @@
     "hudu": {
       "permissions": []
     },
+    "huntress": {
+      "permissions": []
+    },
     "itglue": {
       "permissions": [
         {
@@ -800,6 +652,9 @@
           "require_til": false
         }
       ]
+    },
+    "lexful": {
+      "permissions": []
     },
     "ms_graph": {
       "permissions": [
@@ -962,11 +817,32 @@
     "servicenow": {
       "permissions": []
     },
+    "sharepoint": {
+      "permissions": []
+    },
+    "syncro": {
+      "permissions": []
+    },
+    "syncro_rmm": {
+      "permissions": []
+    },
+    "threatlocker": {
+      "permissions": []
+    },
     "vsax_rmm": {
       "permissions": []
     }
   },
   "name": "(v.1.1) 320-499-resolution_intelligence",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [],
+    "time_period": null,
+    "timezone": "Europe/London"
+  },
+  "source_template_id": null,
   "state": "ENABLED",
   "toolbox": {
     "tool_settings_by_type": {
@@ -975,13 +851,16 @@
         "autotask_note_publish_id": null,
         "autotask_note_type_id": null,
         "halo_outcome_id": null,
+        "require_technician_approval": false,
         "use_custom_autotask_note_type": false
       },
+      "COMPUTE_BUSINESS_ELAPSED_TIME": {},
       "DELAY": {},
       "FIND_CONFIGURATIONS": {},
       "FIND_DOCUMENTATION": {},
       "FIND_PSA_CONTACTS": {},
       "FIND_TICKETS_BY_CONTENT": {},
+      "GENERATE_ARTIFACT": {},
       "GENERATE_PASSWORD": {},
       "GENERATE_SECURE_LINK": {},
       "GET_FIELDS_AGENT_CAN_UPDATE": {},
@@ -993,22 +872,17 @@
       "LOOKUP_AVAILABLE": {},
       "RECALL_MEMORY": {},
       "REVIEW_PAST_RUN": {},
+      "SANDBOX_BASH": {},
+      "SANDBOX_READ_FILE": {},
+      "SANDBOX_WRITE_FILE": {},
       "SEND_EMAIL_TO_INTERNAL_TEAM": {
         "ask_for_feedback": false,
         "emails": [
           "Kodi.Todd@framewerx.ca",
+          "Sean.Smith@framewerx.ca",
           "Stephen.Luong@framewerx.ca",
           "ben.alsfeld@framewerx.ca"
         ]
-      },
-      "SEND_TEAMS_MESSAGE_TO_INTERNAL_TEAM": {
-        "allowed_users": [
-          {
-            "id": "31f43227-e9e1-4cb6-8cb8-97966acf2b1b",
-            "name": "Kodi Todd"
-          }
-        ],
-        "limit_to_allowed_users": true
       },
       "UPDATE_TICKET_FIELDS": {
         "fields_allowed_to_update": [
@@ -1018,5 +892,6 @@
     }
   },
   "trigger_type": "TRIGGERED",
-  "version_timestamp": "2026-06-26T22:30:39.017850Z"
+  "unreleased_permission_groups": [],
+  "version_timestamp": "2026-09-04T16:15:07.511290Z"
 }

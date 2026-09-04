@@ -1,0 +1,223 @@
+{
+  "access": "ALL_USERS",
+  "actions": [
+    {
+      "action_type": "AGENTIC",
+      "id": "032ceefb-cf08-4a91-bae6-47ef8d3efd59",
+      "input_as_dict": {},
+      "output": {
+        "credits_consumed": 0
+      }
+    },
+    {
+      "action_type": "FIND_ENTITIES",
+      "id": "5c4fa522-5394-45a2-b5a7-6dda4fb35310",
+      "input_as_dict": {
+        "opportunity_conditions": {
+          "conditions": {
+            "combinator": "or",
+            "rules": []
+          }
+        },
+        "project_conditions": {
+          "conditions": {
+            "combinator": "or",
+            "rules": []
+          }
+        },
+        "result_entity_type": "TICKET",
+        "single_page": false,
+        "skip_calculated_fields_on_large_datasets": false,
+        "target_ticket_id": null,
+        "ticket_conditions": {
+          "conditions": {
+            "combinator": "and",
+            "rules": [
+              {
+                "field": "ticketType",
+                "id": null,
+                "operator": "=",
+                "value": "Problem",
+                "valueProviderInput": null
+              },
+              {
+                "field": "title",
+                "id": null,
+                "operator": "contains",
+                "value": "[NEO] Disk Capacity",
+                "valueProviderInput": null
+              }
+            ]
+          },
+          "custom_field_conditions": null,
+          "workload_conditions": null
+        },
+        "time_entry_conditions": {
+          "conditions": {
+            "combinator": "or",
+            "rules": []
+          }
+        }
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    }
+  ],
+  "agent_settings": {
+    "custom_instructions": "[see separate markdown file]",
+    "custom_instructions_file": "agent_text/custom-instructions/27524-disk-capacity-problem-closure/agent-settings-custom-instructions.md",
+    "model": null,
+    "reasoning_effort": null,
+    "report_test_via": "INTERNAL_TICKET_NOTE",
+    "subagent_fanout_enabled": false,
+    "test_mode": false,
+    "til_channel": "TEAMS",
+    "trigger_mode": "MENTION_ONLY"
+  },
+  "audience": "MSP",
+  "autonomy_type": "AGENTIC",
+  "callback_settings": {
+    "entity_type": "TICKET",
+    "run_only_once_per_entity": false,
+    "target_changes": [
+      {
+        "change_type": "UPDATE",
+        "source_value": null,
+        "target_field": "status",
+        "target_value": [
+          "Complete"
+        ],
+        "target_workflow_id": null
+      },
+      {
+        "change_type": "UPDATE",
+        "source_value": null,
+        "target_field": "status",
+        "target_value": [
+          "Completed (With CSAT)"
+        ],
+        "target_workflow_id": null
+      }
+    ]
+  },
+  "created_via": null,
+  "entity_type": "TICKET",
+  "id": "27524",
+  "integrations": {
+    "ad": {
+      "permissions": []
+    },
+    "autotask": {
+      "permissions": [
+        {
+          "access_level": "READ_WRITE",
+          "allow_delete": false,
+          "allow_merge": false,
+          "client_facing_settings": null,
+          "group_type": "TICKETS",
+          "internal_note_settings": null,
+          "require_til": false,
+          "time_entry_udf_settings": null,
+          "update_allowed_fields": [
+            "status"
+          ]
+        },
+        {
+          "access_level": "READ_WRITE",
+          "allow_delete": false,
+          "allow_merge": null,
+          "client_facing_settings": null,
+          "group_type": "TICKET_NOTES",
+          "internal_note_settings": null,
+          "require_til": false,
+          "time_entry_udf_settings": null,
+          "update_allowed_fields": null
+        }
+      ]
+    },
+    "confluence": {
+      "permissions": []
+    },
+    "cw_asio": {
+      "permissions": []
+    },
+    "cw_automate": {
+      "permissions": []
+    },
+    "cw_psa": {
+      "permissions": []
+    },
+    "datto_rmm": {
+      "permissions": []
+    },
+    "exchange": {
+      "permissions": []
+    },
+    "halo_psa": {
+      "permissions": []
+    },
+    "hudu": {
+      "permissions": []
+    },
+    "huntress": {
+      "permissions": []
+    },
+    "itglue": {
+      "permissions": []
+    },
+    "lexful": {
+      "permissions": []
+    },
+    "ms_graph": {
+      "permissions": []
+    },
+    "ncentral_rmm": {
+      "permissions": []
+    },
+    "neo_api": {
+      "permissions": []
+    },
+    "ninja_rmm": {
+      "permissions": []
+    },
+    "nsight_rmm": {
+      "permissions": []
+    },
+    "scalepad": {
+      "permissions": []
+    },
+    "screenconnect_rmm": {
+      "permissions": []
+    },
+    "servicenow": {
+      "permissions": []
+    },
+    "sharepoint": {
+      "permissions": []
+    },
+    "syncro": {
+      "permissions": []
+    },
+    "syncro_rmm": {
+      "permissions": []
+    },
+    "threatlocker": {
+      "permissions": []
+    },
+    "vsax_rmm": {
+      "permissions": []
+    }
+  },
+  "name": "disk-capacity-problem-closure",
+  "schedule": null,
+  "source_template_id": null,
+  "state": "DISABLED",
+  "toolbox": {
+    "tool_settings_by_type": {
+      "GET_TICKET_SUMMARIES": {}
+    }
+  },
+  "trigger_type": "TRIGGERED",
+  "unreleased_permission_groups": []
+}

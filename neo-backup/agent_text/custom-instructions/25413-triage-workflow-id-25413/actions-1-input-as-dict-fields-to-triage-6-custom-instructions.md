@@ -1,1 +1,1 @@
-- default to 24 hours post ticket creation date & time
+EMAIL-VERIFICATION ROUTING: For every user-requested email, sender, link, or attachment verification, always select a phishing-agent target subtype. Use Spam when the request is verification-only and no interaction, compromise, or exposure is reported. Use Email Breach/User Phished when interaction, credential submission, compromise, or exposure is reported. Never set or retain a business or sales subtype, including SE Request, for an email-verification request.

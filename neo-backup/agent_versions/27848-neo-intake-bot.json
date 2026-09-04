@@ -1,0 +1,15 @@
+[
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CONVERSATIONAL",
+    "created_via": null,
+    "entity_type": "NONE",
+    "id": "27848",
+    "name": "Neo Intake Bot",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "NONE",
+    "version_timestamp": "2026-09-03T17:58:38.740309Z"
+  }
+]

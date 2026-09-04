@@ -3,7 +3,7 @@
   "actions": [
     {
       "action_type": "AGENTIC",
-      "id": "10fac9ac-82cc-49c4-a1f7-6b0f6ee76e1a",
+      "id": "8057e132-9114-4533-be1f-8b443f2e169a",
       "input_as_dict": {},
       "output": {
         "credits_consumed": 0
@@ -23,6 +23,8 @@
   },
   "audience": "MSP",
   "autonomy_type": "AGENTIC",
+  "callback_settings": null,
+  "created_via": null,
   "entity_type": "TICKET",
   "id": "24487",
   "integrations": {
@@ -458,6 +460,9 @@
     "hudu": {
       "permissions": []
     },
+    "huntress": {
+      "permissions": []
+    },
     "itglue": {
       "permissions": [
         {
@@ -503,6 +508,9 @@
           "require_til": false
         }
       ]
+    },
+    "lexful": {
+      "permissions": []
     },
     "ms_graph": {
       "permissions": [
@@ -680,25 +688,77 @@
     "servicenow": {
       "permissions": []
     },
+    "sharepoint": {
+      "permissions": []
+    },
+    "syncro": {
+      "permissions": []
+    },
+    "syncro_rmm": {
+      "permissions": []
+    },
+    "threatlocker": {
+      "permissions": []
+    },
     "vsax_rmm": {
       "permissions": []
     }
   },
   "name": "microsoft-license-reconciliation",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": {
+      "friday": [],
+      "monday": [],
+      "saturday": [
+        {
+          "run_end_time": "23:59:59.999000",
+          "run_start_time": "00:00:00"
+        }
+      ],
+      "sunday": [
+        {
+          "run_end_time": "23:59:59.999000",
+          "run_start_time": "00:00:00"
+        }
+      ],
+      "thursday": [],
+      "tuesday": [],
+      "wednesday": []
+    },
+    "should_skip_weekends": false,
+    "start_datetimes": [
+      "2026-07-21T23:30:00Z"
+    ],
+    "time_period": {
+      "interval": 1,
+      "unit": "MONTH"
+    },
+    "timezone": "America/Edmonton"
+  },
+  "source_template_id": null,
   "state": "DISABLED",
   "toolbox": {
     "tool_settings_by_type": {
+      "COMPUTE_BUSINESS_ELAPSED_TIME": {},
       "DELAY": {},
       "FIND_CONFIGURATIONS": {},
       "FIND_DOCUMENTATION": {},
       "FIND_PSA_CONTACTS": {},
       "FIND_TICKETS_BY_CONTENT": {},
+      "GENERATE_ARTIFACT": {},
       "GENERATE_PASSWORD": {},
       "GENERATE_SECURE_LINK": {},
+      "GET_SYNCED_DEVICE_COUNTS": {},
       "GET_TICKET_SUMMARIES": {},
       "LIST_END_CLIENT_COMPANIES": {},
+      "LIST_SYNCED_DEVICES": {},
       "LOOKUP_AVAILABLE": {},
       "RECALL_MEMORY": {},
+      "REVIEW_PAST_RUN": {},
+      "SANDBOX_BASH": {},
+      "SANDBOX_READ_FILE": {},
+      "SANDBOX_WRITE_FILE": {},
       "SEND_EMAIL_TO_INTERNAL_TEAM": {
         "ask_for_feedback": false,
         "emails": [
@@ -706,15 +766,18 @@
         ]
       },
       "SEND_TEAMS_MESSAGE_TO_INTERNAL_TEAM": {
+        "allowed_channels": [],
         "allowed_users": [
           {
             "id": "31f43227-e9e1-4cb6-8cb8-97966acf2b1b",
             "name": "Kodi Todd"
           }
         ],
-        "limit_to_allowed_users": true
+        "channel_scope": "OFF",
+        "user_scope": "SPECIFIC"
       }
     }
   },
-  "trigger_type": "SCHEDULED"
+  "trigger_type": "SCHEDULED",
+  "unreleased_permission_groups": []
 }

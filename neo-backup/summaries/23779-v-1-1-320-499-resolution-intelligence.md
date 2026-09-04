@@ -6,9 +6,9 @@
 - Type: `AGENTIC`
 - Trigger: `TRIGGERED`
 - Entity: `TICKET`
-- Version records exported: `17`
-- Tools configured: 20
-- Tool sample: ADD_INTERNAL_TICKET_NOTE, DELAY, FIND_CONFIGURATIONS, FIND_DOCUMENTATION, FIND_PSA_CONTACTS … (+15 more)
+- Version records exported: `24`
+- Tools configured: 24
+- Tool sample: ADD_INTERNAL_TICKET_NOTE, COMPUTE_BUSINESS_ELAPSED_TIME, DELAY, FIND_CONFIGURATIONS, FIND_DOCUMENTATION … (+19 more)
 - Extracted text files: 1
 - `agent_text/custom-instructions/23779-v-1-1-320-499-resolution-intelligence/agent-settings-custom-instructions.md`
 
@@ -20,4 +20,4 @@
 - `agent_text/custom-instructions/` = extracted multiline instructions for clean diffs
 - `summaries/` = short human-readable summaries
 
-_Exported at 2026-07-20T16:18:24.081158+00:00_
+_Exported at 2026-09-04T22:36:38.368418+00:00_

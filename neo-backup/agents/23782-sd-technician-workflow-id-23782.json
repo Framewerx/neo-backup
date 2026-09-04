@@ -3,7 +3,7 @@
   "actions": [
     {
       "action_type": "FIND_ENTITIES",
-      "id": "6b44a2b0-6be6-46ec-8dbf-56c62c376112",
+      "id": "00662d34-17ea-420f-815f-5838f091ee0e",
       "input_as_dict": {
         "opportunity_conditions": {
           "conditions": {
@@ -26,6 +26,32 @@
                 "combinator": "and",
                 "rules": [
                   {
+                    "field": "companyID",
+                    "id": null,
+                    "operator": "!=",
+                    "value": "HCA",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "companyID",
+                    "id": null,
+                    "operator": "!=",
+                    "value": "HYC",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "companyID",
+                    "id": null,
+                    "operator": "!=",
+                    "value": "Hy's of Canada Ltd.",
+                    "valueProviderInput": null
+                  }
+                ]
+              },
+              {
+                "combinator": "and",
+                "rules": [
+                  {
                     "field": "subIssueType",
                     "id": null,
                     "operator": "!=",
@@ -44,6 +70,44 @@
               {
                 "combinator": "or",
                 "rules": [
+                  {
+                    "combinator": "and",
+                    "rules": [
+                      {
+                        "field": "queueID",
+                        "id": null,
+                        "operator": "=",
+                        "value": "010 Client Portal",
+                        "valueProviderInput": null
+                      },
+                      {
+                        "field": "status",
+                        "id": null,
+                        "operator": "=",
+                        "value": "Reopened",
+                        "valueProviderInput": null
+                      }
+                    ]
+                  },
+                  {
+                    "combinator": "and",
+                    "rules": [
+                      {
+                        "field": "queueID",
+                        "id": null,
+                        "operator": "=",
+                        "value": "020 Triage",
+                        "valueProviderInput": null
+                      },
+                      {
+                        "field": "status",
+                        "id": null,
+                        "operator": "=",
+                        "value": "Reopened",
+                        "valueProviderInput": null
+                      }
+                    ]
+                  },
                   {
                     "combinator": "and",
                     "rules": [
@@ -91,7 +155,7 @@
                     "field": "assignedResourceID",
                     "id": null,
                     "operator": "=",
-                    "value": "Logan Brooks",
+                    "value": "29682976",
                     "valueProviderInput": null
                   },
                   {
@@ -107,360 +171,52 @@
                 "combinator": "or",
                 "rules": [
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "ABC",
+                    "value": "FW-Managed",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "ASB",
+                    "value": "FW360",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "BL",
+                    "value": "Hosted Service",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "BLR",
+                    "value": "Misc Services",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "BLS",
+                    "value": "NeuralWerx",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "BSL",
+                    "value": "Residential",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "BTC",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "CBC",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "CFS",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "CGC",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "CLP",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "CMW",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "CSI",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "FAK",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "FCL",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "FFS",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "FIO",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "FWI",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "G3D",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "GRV",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "HFM",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "HIE",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "IIS",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "ISR",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "KES",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "KVR",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "LCF",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "LDW",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "LIL",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "MSD",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "MXM",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "NGM",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "NKG",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "NKS",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "OMG",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "OSG",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "PCM",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "PVB",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "QBC",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "QMI",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "RCC",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "RDC",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "RWM",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "SCI",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "SCP",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "SEC",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "SEG",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "SI",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "SPM",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "SSL",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "VCS",
+                    "value": "T&M",
                     "valueProviderInput": null
                   }
                 ]
@@ -492,7 +248,7 @@
     },
     {
       "action_type": "AGENTIC",
-      "id": "85794e6a-434c-4c1d-abc6-2cb6f5abee4b",
+      "id": "8cce4765-4b08-474f-81ca-58ceceedd6f1",
       "input_as_dict": {},
       "output": {
         "credits_consumed": 0
@@ -512,6 +268,36 @@
   },
   "audience": "MSP",
   "autonomy_type": "AGENTIC",
+  "callback_settings": {
+    "entity_type": "TICKET",
+    "run_only_once_per_entity": false,
+    "target_changes": [
+      {
+        "change_type": "CUSTOMER_REPLIED",
+        "source_value": null,
+        "target_field": null,
+        "target_value": null,
+        "target_workflow_id": null
+      },
+      {
+        "change_type": "UPDATE",
+        "source_value": null,
+        "target_field": "status",
+        "target_value": [
+          "Reopened"
+        ],
+        "target_workflow_id": null
+      },
+      {
+        "change_type": "WORKFLOW_FINISHED",
+        "source_value": null,
+        "target_field": null,
+        "target_value": null,
+        "target_workflow_id": 25413
+      }
+    ]
+  },
+  "created_via": null,
   "entity_type": "TICKET",
   "id": "23782",
   "integrations": {
@@ -540,7 +326,7 @@
         {
           "access_level": "READ_WRITE",
           "group_type": "GROUPS",
-          "require_til": false
+          "require_til": true
         },
         {
           "access_level": "READ_WRITE",
@@ -666,17 +452,6 @@
           "allow_delete": false,
           "allow_merge": null,
           "client_facing_settings": null,
-          "group_type": "RESOURCES",
-          "internal_note_settings": null,
-          "require_til": false,
-          "time_entry_udf_settings": null,
-          "update_allowed_fields": null
-        },
-        {
-          "access_level": "DISABLED",
-          "allow_delete": false,
-          "allow_merge": null,
-          "client_facing_settings": null,
           "group_type": "SALES_ORDERS",
           "internal_note_settings": null,
           "require_til": false,
@@ -788,6 +563,17 @@
           "allow_merge": null,
           "client_facing_settings": null,
           "group_type": "ADMIN",
+          "internal_note_settings": null,
+          "require_til": true,
+          "time_entry_udf_settings": null,
+          "update_allowed_fields": null
+        },
+        {
+          "access_level": "READ_WRITE",
+          "allow_delete": false,
+          "allow_merge": null,
+          "client_facing_settings": null,
+          "group_type": "RESOURCES",
           "internal_note_settings": null,
           "require_til": false,
           "time_entry_udf_settings": null,
@@ -959,6 +745,9 @@
     "hudu": {
       "permissions": []
     },
+    "huntress": {
+      "permissions": []
+    },
     "itglue": {
       "permissions": [
         {
@@ -1004,6 +793,9 @@
           "require_til": false
         }
       ]
+    },
+    "lexful": {
+      "permissions": []
     },
     "ms_graph": {
       "permissions": [
@@ -1217,14 +1009,36 @@
     "servicenow": {
       "permissions": []
     },
+    "sharepoint": {
+      "permissions": []
+    },
+    "syncro": {
+      "permissions": []
+    },
+    "syncro_rmm": {
+      "permissions": []
+    },
+    "threatlocker": {
+      "permissions": []
+    },
     "vsax_rmm": {
       "permissions": []
     }
   },
   "name": "sd-technician (workflow ID:23782) ",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [],
+    "time_period": null,
+    "timezone": "Europe/Madrid"
+  },
+  "source_template_id": null,
   "state": "ENABLED",
   "toolbox": {
     "tool_settings_by_type": {
+      "COMPUTE_BUSINESS_ELAPSED_TIME": {},
       "DELAY": {},
       "FIND_CONFIGURATIONS": {},
       "FIND_DOCUMENTATION": {},
@@ -1233,6 +1047,7 @@
       "FIND_RMM_SCRIPT": {},
       "FIND_TICKETS_BY_CONTENT": {},
       "FIND_TICKETS_BY_METADATA": {},
+      "GENERATE_ARTIFACT": {},
       "GENERATE_PASSWORD": {},
       "GENERATE_SECURE_LINK": {},
       "GET_DEVICE_SOFTWARE": {},
@@ -1240,6 +1055,7 @@
       "GET_SYNCED_DEVICE_COUNTS": {},
       "GET_TICKET_SUMMARIES": {},
       "LIST_END_CLIENT_COMPANIES": {},
+      "LIST_SCHEDULED_WORKFLOW_RUNS": {},
       "LIST_SYNCED_DEVICES": {},
       "LOOKUP_AVAILABLE": {},
       "RECALL_MEMORY": {},
@@ -1260,6 +1076,9 @@
         ]
       },
       "REVIEW_PAST_RUN": {},
+      "SANDBOX_BASH": {},
+      "SANDBOX_READ_FILE": {},
+      "SANDBOX_WRITE_FILE": {},
       "SEND_MESSAGE_TO_ADDITIONAL_CONTACT": {
         "autotask_note_publish_id": null,
         "autotask_note_type_id": null,
@@ -1274,6 +1093,7 @@
         "use_udf_field_to_trigger_autotask_workflow": true
       },
       "SEND_TEAMS_MESSAGE_TO_INTERNAL_TEAM": {
+        "allowed_channels": [],
         "allowed_users": [
           {
             "id": "20ae680a-659f-4374-9581-0286720c9938",
@@ -1296,7 +1116,8 @@
             "name": "Adam Price"
           }
         ],
-        "limit_to_allowed_users": true
+        "channel_scope": "OFF",
+        "user_scope": "SPECIFIC"
       },
       "TRIGGER_OR_SCHEDULE_WORKFLOW": {
         "disable_self_scheduling": true,
@@ -1308,5 +1129,6 @@
       "WEB_SEARCH": {}
     }
   },
-  "trigger_type": "TRIGGERED"
+  "trigger_type": "TRIGGERED",
+  "unreleased_permission_groups": []
 }

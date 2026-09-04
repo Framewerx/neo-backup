@@ -24,6 +24,7 @@
         "create_owner_entry": false,
         "custom_instructions": "[see separate markdown file]",
         "custom_instructions_file": "agent_text/custom-instructions/23783-router-workflow-id-23783/actions-1-input-as-dict-custom-instructions.md",
+        "remove_entries_of_replaced_technicians": false,
         "send_email_to_owner": true,
         "skip_if_already_assigned": false,
         "target_status_name": "Ready for Next Steps",
@@ -35,48 +36,24 @@
       }
     },
     {
-      "action_type": "NOTIFY_USERS",
-      "id": "5ee392d9-69ca-4bb2-a909-2c9d53bd050d",
-      "input_as_dict": {
-        "ask_for_feedback": false,
-        "custom_instructions": "[see separate markdown file]",
-        "custom_instructions_file": "agent_text/custom-instructions/23783-router-workflow-id-23783/actions-2-input-as-dict-custom-instructions.md",
-        "notification_channel": "TEAMS",
-        "use_custom_instructions": true,
-        "users": [
-          {
-            "id": "227b04cd-5c09-4d79-ba65-7b69e0de0890",
-            "name": "Devon Young"
-          },
-          {
-            "id": "31f43227-e9e1-4cb6-8cb8-97966acf2b1b",
-            "name": "Kodi Todd"
-          }
-        ]
-      },
-      "output": {
-        "credits_consumed": 0
-      }
-    },
-    {
       "action_type": "DISPATCH_TICKET",
       "id": "a04c55e1-eed2-4286-8390-f063b7cd5af5",
       "input_as_dict": {
         "configure_message_settings": true,
         "consider_company_continuity": false,
-        "consider_exclusion_rules": false,
+        "consider_exclusion_rules": true,
         "consider_similar_tickets": false,
         "consider_teams_availability": false,
         "consider_technician_calendar": true,
         "consider_technician_profile": true,
         "consider_technician_workload": true,
         "custom_instructions": "[see separate markdown file]",
-        "custom_instructions_file": "agent_text/custom-instructions/23783-router-workflow-id-23783/actions-3-input-as-dict-custom-instructions.md",
+        "custom_instructions_file": "agent_text/custom-instructions/23783-router-workflow-id-23783/actions-2-input-as-dict-custom-instructions.md",
         "dispatch_calendar_settings": {
           "add_schedule_entry": false,
-          "consider_psa_working_hours": false,
+          "consider_psa_working_hours": true,
           "consider_us_holidays": false,
-          "days_in_the_future": 3,
+          "days_in_the_future": 2,
           "holiday_source": "PSA_HOLIDAYS"
         },
         "dispatch_exclusion_rules": {
@@ -84,11 +61,12 @@
           "do_not_dispatch_if_scheduled_entry_exists": false,
           "do_not_dispatch_if_ticket_created_with_owner": false,
           "filter_by_company_team": false,
-          "skip_if_already_assigned": false
+          "skip_if_already_assigned": false,
+          "skip_if_merged": false
         },
         "dispatch_expertise_settings": {
           "include_profile": true,
-          "include_skills": false
+          "include_skills": true
         },
         "dispatch_message_settings": {
           "include_reasoning_in_message": true,
@@ -118,6 +96,10 @@
               "name": "Daniel Leder"
             },
             {
+              "id": "29682917",
+              "name": "Adam Price"
+            },
+            {
               "id": "29682929",
               "name": "James Reid"
             },
@@ -134,12 +116,12 @@
               "name": "Lavanya Tanwani"
             },
             {
-              "id": "29682952",
-              "name": "Deekshay Sethi"
-            },
-            {
               "id": "29682973",
               "name": "Michelle Ronnenkamp"
+            },
+            {
+              "id": "29682974",
+              "name": "Kodi Todd"
             },
             {
               "id": "29682977",
@@ -148,6 +130,14 @@
             {
               "id": "29682986",
               "name": "Billy Nguyen"
+            },
+            {
+              "id": "29683007",
+              "name": "Claris Paz"
+            },
+            {
+              "id": "29683011",
+              "name": "Rashmi Senanayake"
             }
           ],
           "technician_pool_source": "DASHBOARD_POOL"
@@ -171,6 +161,7 @@
             "question": "How do you define priorities?"
           }
         ],
+        "human_in_the_loop_mode": "NEVER",
         "number_of_technicians_to_suggest": 1,
         "use_custom_instructions": true,
         "use_round_robin": false
@@ -199,10 +190,72 @@
         "ticket_conditions": {
           "conditions": {
             "combinator": "and",
-            "rules": []
+            "rules": [
+              {
+                "combinator": "or",
+                "rules": [
+                  {
+                    "field": "company_classification",
+                    "id": null,
+                    "operator": "=",
+                    "value": "FW-Managed - Internal NW",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "company_classification",
+                    "id": null,
+                    "operator": "=",
+                    "value": "FW360 - Internal NW",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "company_classification",
+                    "id": null,
+                    "operator": "=",
+                    "value": "FW360",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "company_classification",
+                    "id": null,
+                    "operator": "=",
+                    "value": "Hosted Service",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "company_classification",
+                    "id": null,
+                    "operator": "=",
+                    "value": "Misc Services",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "company_classification",
+                    "id": null,
+                    "operator": "=",
+                    "value": "NeuralWerx",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "company_classification",
+                    "id": null,
+                    "operator": "=",
+                    "value": "Residential",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "company_classification",
+                    "id": null,
+                    "operator": "=",
+                    "value": "T&M",
+                    "valueProviderInput": null
+                  }
+                ]
+              }
+            ]
           },
           "custom_field_conditions": {
-            "combinator": "and",
+            "combinator": "or",
             "conditions": [
               {
                 "field": "AI Eligibility",
@@ -230,7 +283,7 @@
       "input_as_dict": {
         "ask_for_feedback": false,
         "custom_instructions": "[see separate markdown file]",
-        "custom_instructions_file": "agent_text/custom-instructions/23783-router-workflow-id-23783/actions-5-input-as-dict-custom-instructions.md",
+        "custom_instructions_file": "agent_text/custom-instructions/23783-router-workflow-id-23783/actions-4-input-as-dict-custom-instructions.md",
         "note_type": "Internal Note",
         "use_custom_instructions": true
       },
@@ -242,12 +295,43 @@
   "agent_settings": null,
   "audience": "MSP",
   "autonomy_type": "CHAINED_ACTIONS",
+  "callback_settings": {
+    "entity_type": "TICKET",
+    "run_only_once_per_entity": false,
+    "target_changes": [
+      {
+        "change_type": "MANUAL_ONLY",
+        "source_value": null,
+        "target_field": null,
+        "target_value": null,
+        "target_workflow_id": null
+      },
+      {
+        "change_type": "WORKFLOW_FINISHED",
+        "source_value": null,
+        "target_field": null,
+        "target_value": null,
+        "target_workflow_id": 25413
+      }
+    ]
+  },
+  "created_via": null,
   "entity_type": "TICKET",
   "id": "23783",
   "integrations": null,
   "name": "router (workflow ID:23783)",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [],
+    "time_period": null,
+    "timezone": "America/Sao_Paulo"
+  },
+  "source_template_id": null,
   "state": "ENABLED",
   "toolbox": null,
   "trigger_type": "TRIGGERED",
-  "version_timestamp": "2026-07-16T17:07:21.900527Z"
+  "unreleased_permission_groups": [],
+  "version_timestamp": "2026-09-02T22:41:00.514243Z"
 }

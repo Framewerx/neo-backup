@@ -6,13 +6,12 @@
 - Type: `CHAINED_ACTIONS`
 - Trigger: `TRIGGERED`
 - Entity: `TICKET`
-- Version records exported: `22`
+- Version records exported: `41`
 - Integrations: 0
-- Extracted text files: 4
+- Extracted text files: 3
 - `agent_text/custom-instructions/23783-router-workflow-id-23783/actions-1-input-as-dict-custom-instructions.md`
 - `agent_text/custom-instructions/23783-router-workflow-id-23783/actions-2-input-as-dict-custom-instructions.md`
-- `agent_text/custom-instructions/23783-router-workflow-id-23783/actions-3-input-as-dict-custom-instructions.md`
-- `agent_text/custom-instructions/23783-router-workflow-id-23783/actions-5-input-as-dict-custom-instructions.md`
+- `agent_text/custom-instructions/23783-router-workflow-id-23783/actions-4-input-as-dict-custom-instructions.md`
 
 ## Export contents
 
@@ -22,4 +21,4 @@
 - `agent_text/custom-instructions/` = extracted multiline instructions for clean diffs
 - `summaries/` = short human-readable summaries
 
-_Exported at 2026-07-20T16:18:27.377813+00:00_
+_Exported at 2026-09-04T22:36:41.550012+00:00_

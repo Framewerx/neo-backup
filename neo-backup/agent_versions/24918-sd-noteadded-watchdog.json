@@ -1,0 +1,80 @@
+[
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "24918",
+    "name": "sd-noteadded-watchdog",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-30T15:19:41.470516Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "24918",
+    "name": "force-noteadded-loganbrooks",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-30T15:17:55.439221Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "24918",
+    "name": "force-noteadded-loganbrooks",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-29T20:18:22.854179Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "24918",
+    "name": "force-noteadded-loganbrooks",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-06-26T23:18:31.167601Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "24918",
+    "name": "force-noteadded-loganbrooks",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-06-26T19:52:56.176447Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "24918",
+    "name": "force-noteadded-loganbrooks",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-06-24T20:27:32.710217Z"
+  }
+]

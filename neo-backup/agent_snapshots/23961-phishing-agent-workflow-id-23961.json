@@ -3,7 +3,7 @@
   "actions": [
     {
       "action_type": "AGENTIC",
-      "id": "10cc285b-edab-4671-8f17-b8626ae71b13",
+      "id": "80305001-4ea3-44bc-8b47-4c9cf3dca0c2",
       "input_as_dict": {},
       "output": {
         "credits_consumed": 0
@@ -11,7 +11,7 @@
     },
     {
       "action_type": "FIND_ENTITIES",
-      "id": "892f8aad-5c76-4763-90d4-fc57f5dea0b5",
+      "id": "c7b2d1b5-6bb2-4965-a7d3-5a1492853e1a",
       "input_as_dict": {
         "opportunity_conditions": {
           "conditions": {
@@ -30,6 +30,46 @@
           "conditions": {
             "combinator": "and",
             "rules": [
+              {
+                "combinator": "or",
+                "rules": [
+                  {
+                    "field": "company_classification",
+                    "operator": "=",
+                    "value": "FW-Managed"
+                  },
+                  {
+                    "field": "company_classification",
+                    "operator": "=",
+                    "value": "FW360"
+                  },
+                  {
+                    "field": "company_classification",
+                    "operator": "=",
+                    "value": "Hosted Service"
+                  },
+                  {
+                    "field": "company_classification",
+                    "operator": "=",
+                    "value": "Misc Services"
+                  },
+                  {
+                    "field": "company_classification",
+                    "operator": "=",
+                    "value": "NeuralWerx"
+                  },
+                  {
+                    "field": "company_classification",
+                    "operator": "=",
+                    "value": "Residential"
+                  },
+                  {
+                    "field": "company_classification",
+                    "operator": "=",
+                    "value": "T&M"
+                  }
+                ]
+              },
               {
                 "combinator": "or",
                 "rules": [
@@ -53,13 +93,8 @@
                 "field": "creatorResourceID",
                 "id": null,
                 "operator": "!=",
-                "value": "Migration Tool - AP API",
+                "value": "29682999",
                 "valueProviderInput": null
-              },
-              {
-                "field": "status",
-                "operator": "!=",
-                "value": "Waiting Technician"
               }
             ]
           },
@@ -100,6 +135,29 @@
   },
   "audience": "MSP",
   "autonomy_type": "AGENTIC",
+  "callback_settings": {
+    "entity_type": "TICKET",
+    "run_only_once_per_entity": false,
+    "target_changes": [
+      {
+        "change_type": "UPDATE",
+        "source_value": null,
+        "target_field": "status",
+        "target_value": [
+          "Reopened"
+        ],
+        "target_workflow_id": null
+      },
+      {
+        "change_type": "WORKFLOW_FINISHED",
+        "source_value": null,
+        "target_field": null,
+        "target_value": null,
+        "target_workflow_id": 25413
+      }
+    ]
+  },
+  "created_via": null,
   "entity_type": "TICKET",
   "id": "23961",
   "integrations": {
@@ -107,31 +165,31 @@
       "permissions": [
         {
           "access_level": "DISABLED",
-          "group_type": "COMPUTERS",
-          "require_til": false
-        },
-        {
-          "access_level": "DISABLED",
           "group_type": "ENTRA_CONNECT_SYNC",
           "require_til": false
         },
         {
-          "access_level": "DISABLED",
+          "access_level": "READ_ONLY",
+          "group_type": "COMPUTERS",
+          "require_til": false
+        },
+        {
+          "access_level": "READ_ONLY",
           "group_type": "GROUPS",
           "require_til": false
         },
         {
-          "access_level": "DISABLED",
+          "access_level": "READ_ONLY",
           "group_type": "INFRASTRUCTURE",
           "require_til": false
         },
         {
-          "access_level": "DISABLED",
+          "access_level": "READ_ONLY",
           "group_type": "ORGANIZATIONAL_STRUCTURE",
           "require_til": false
         },
         {
-          "access_level": "DISABLED",
+          "access_level": "READ_ONLY",
           "group_type": "USER_MANAGEMENT",
           "require_til": false
         }
@@ -456,37 +514,37 @@
     "exchange": {
       "permissions": [
         {
-          "access_level": "DISABLED",
+          "access_level": "READ_ONLY",
           "group_type": "ADDRESS_LISTS_AND_POLICIES",
           "require_til": false
         },
         {
-          "access_level": "DISABLED",
+          "access_level": "READ_ONLY",
           "group_type": "COMPLIANCE_AND_AUDITING",
           "require_til": false
         },
         {
-          "access_level": "DISABLED",
+          "access_level": "READ_ONLY",
           "group_type": "DISTRIBUTION_GROUPS",
           "require_til": false
         },
         {
-          "access_level": "DISABLED",
+          "access_level": "READ_ONLY",
           "group_type": "MAILBOXES",
           "require_til": false
         },
         {
-          "access_level": "DISABLED",
+          "access_level": "READ_ONLY",
           "group_type": "MAILBOX_PERMISSIONS",
           "require_til": false
         },
         {
-          "access_level": "DISABLED",
+          "access_level": "READ_ONLY",
           "group_type": "MAIL_FLOW_AND_TRANSPORT",
           "require_til": false
         },
         {
-          "access_level": "DISABLED",
+          "access_level": "READ_ONLY",
           "group_type": "RECIPIENTS_AND_CONTACTS",
           "require_til": false
         }
@@ -498,83 +556,89 @@
     "hudu": {
       "permissions": []
     },
+    "huntress": {
+      "permissions": []
+    },
     "itglue": {
+      "permissions": []
+    },
+    "lexful": {
       "permissions": []
     },
     "ms_graph": {
       "permissions": [
         {
           "access_level": "DISABLED",
-          "group_type": "APPLICATIONS",
-          "require_til": false
-        },
-        {
-          "access_level": "DISABLED",
-          "group_type": "AUDIT_AND_REPORTS",
-          "require_til": false
-        },
-        {
-          "access_level": "DISABLED",
-          "group_type": "CONDITIONAL_ACCESS",
-          "require_til": false
-        },
-        {
-          "access_level": "DISABLED",
-          "group_type": "DEVICES",
-          "require_til": false
-        },
-        {
-          "access_level": "DISABLED",
-          "group_type": "DIRECTORY_ROLES",
-          "require_til": false
-        },
-        {
-          "access_level": "DISABLED",
-          "group_type": "DOMAINS",
-          "require_til": false
-        },
-        {
-          "access_level": "DISABLED",
-          "group_type": "GROUPS",
-          "require_til": false
-        },
-        {
-          "access_level": "DISABLED",
-          "group_type": "LICENSING",
-          "require_til": false
-        },
-        {
-          "access_level": "DISABLED",
-          "group_type": "MAIL",
-          "require_til": false
-        },
-        {
-          "access_level": "DISABLED",
-          "group_type": "SECURITY",
-          "require_til": false
-        },
-        {
-          "access_level": "DISABLED",
-          "group_type": "SECURITY_OPERATIONS",
-          "require_til": false
-        },
-        {
-          "access_level": "DISABLED",
           "group_type": "SERVICE_HEALTH",
           "require_til": false
         },
         {
-          "access_level": "DISABLED",
+          "access_level": "READ_ONLY",
+          "group_type": "APPLICATIONS",
+          "require_til": false
+        },
+        {
+          "access_level": "READ_ONLY",
+          "group_type": "AUDIT_AND_REPORTS",
+          "require_til": false
+        },
+        {
+          "access_level": "READ_ONLY",
+          "group_type": "CONDITIONAL_ACCESS",
+          "require_til": false
+        },
+        {
+          "access_level": "READ_ONLY",
+          "group_type": "DEVICES",
+          "require_til": false
+        },
+        {
+          "access_level": "READ_ONLY",
+          "group_type": "DIRECTORY_ROLES",
+          "require_til": false
+        },
+        {
+          "access_level": "READ_ONLY",
+          "group_type": "DOMAINS",
+          "require_til": false
+        },
+        {
+          "access_level": "READ_ONLY",
+          "group_type": "GROUPS",
+          "require_til": false
+        },
+        {
+          "access_level": "READ_ONLY",
+          "group_type": "LICENSING",
+          "require_til": false
+        },
+        {
+          "access_level": "READ_ONLY",
+          "group_type": "MAIL",
+          "require_til": false
+        },
+        {
+          "access_level": "READ_ONLY",
+          "group_type": "SECURITY",
+          "require_til": false
+        },
+        {
+          "access_level": "READ_ONLY",
+          "group_type": "SECURITY_OPERATIONS",
+          "require_til": false
+        },
+        {
+          "access_level": "READ_ONLY",
           "group_type": "SHAREPOINT_AND_ONEDRIVE",
           "require_til": false
         },
         {
-          "access_level": "DISABLED",
+          "access_level": "READ_ONLY",
           "group_type": "TEAMS_AND_CHATS",
           "require_til": false
         },
         {
-          "access_level": "DISABLED",
+          "access_level": "READ_ONLY",
           "group_type": "USER_MANAGEMENT",
           "require_til": false
         }
@@ -687,19 +751,42 @@
     "servicenow": {
       "permissions": []
     },
+    "sharepoint": {
+      "permissions": []
+    },
+    "syncro": {
+      "permissions": []
+    },
+    "syncro_rmm": {
+      "permissions": []
+    },
+    "threatlocker": {
+      "permissions": []
+    },
     "vsax_rmm": {
       "permissions": []
     }
   },
   "name": "phishing-agent (workflow ID: 23961) ",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [],
+    "time_period": null,
+    "timezone": "America/Edmonton"
+  },
+  "source_template_id": null,
   "state": "ENABLED",
   "toolbox": {
     "tool_settings_by_type": {
+      "COMPUTE_BUSINESS_ELAPSED_TIME": {},
       "DELAY": {},
       "FIND_CONFIGURATIONS": {},
       "FIND_DOCUMENTATION": {},
       "FIND_PSA_CONTACTS": {},
       "FIND_TICKETS_BY_CONTENT": {},
+      "GENERATE_ARTIFACT": {},
       "GENERATE_PASSWORD": {},
       "GENERATE_SECURE_LINK": {},
       "GET_SYNCED_DEVICE_COUNTS": {},
@@ -709,14 +796,19 @@
       "LOOKUP_AVAILABLE": {},
       "RECALL_MEMORY": {},
       "REVIEW_PAST_RUN": {},
+      "SANDBOX_BASH": {},
+      "SANDBOX_READ_FILE": {},
+      "SANDBOX_WRITE_FILE": {},
       "SEND_TEAMS_MESSAGE_TO_INTERNAL_TEAM": {
+        "allowed_channels": [],
         "allowed_users": [
           {
             "id": "31f43227-e9e1-4cb6-8cb8-97966acf2b1b",
             "name": "Kodi Todd"
           }
         ],
-        "limit_to_allowed_users": true
+        "channel_scope": "OFF",
+        "user_scope": "SPECIFIC"
       },
       "TRIGGER_OR_SCHEDULE_WORKFLOW": {
         "disable_self_scheduling": true,
@@ -727,5 +819,6 @@
     }
   },
   "trigger_type": "TRIGGERED",
-  "version_timestamp": "2026-07-14T16:39:19.999159Z"
+  "unreleased_permission_groups": [],
+  "version_timestamp": "2026-08-25T22:12:19.961943Z"
 }

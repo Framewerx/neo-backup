@@ -1,0 +1,67 @@
+[
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "26133",
+    "name": "offline-online-alert-watchdog",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-24T21:56:14.881427Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "26133",
+    "name": "offline-online-alert-watchdog",
+    "source_template_id": null,
+    "state": "DISABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-24T21:34:43.177456Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "26133",
+    "name": "offline-online-alert-watchdog",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-24T21:34:36.549565Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "26133",
+    "name": "offline-online-alert-watchdog",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-24T21:29:40.659596Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "26133",
+    "name": "offline-online-alert-watchdog",
+    "source_template_id": null,
+    "state": "DISABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-07-24T21:23:24.836145Z"
+  }
+]

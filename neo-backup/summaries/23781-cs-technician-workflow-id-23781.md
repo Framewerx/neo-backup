@@ -6,9 +6,9 @@
 - Type: `AGENTIC`
 - Trigger: `TRIGGERED`
 - Entity: `TICKET`
-- Version records exported: `44`
-- Tools configured: 27
-- Tool sample: CREATE_TICKET, DELAY, EXECUTE_RMM_SCRIPT, FIND_CONFIGURATIONS, FIND_DOCUMENTATION … (+22 more)
+- Version records exported: `55`
+- Tools configured: 33
+- Tool sample: COMPUTE_BUSINESS_ELAPSED_TIME, CREATE_TICKET, DELAY, EXECUTE_RMM_SCRIPT, FIND_CONFIGURATIONS … (+28 more)
 - Extracted text files: 1
 - `agent_text/custom-instructions/23781-cs-technician-workflow-id-23781/agent-settings-custom-instructions.md`
 
@@ -20,4 +20,4 @@
 - `agent_text/custom-instructions/` = extracted multiline instructions for clean diffs
 - `summaries/` = short human-readable summaries
 
-_Exported at 2026-07-20T16:18:25.235713+00:00_
+_Exported at 2026-09-04T22:36:39.445299+00:00_

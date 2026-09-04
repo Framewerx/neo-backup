@@ -48,142 +48,6 @@
             "allow_removing_field": false,
             "custom_instructions": "[see separate markdown file]",
             "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-2-custom-instructions.md",
-            "field_name": "queue",
-            "predefined_options": [
-              {
-                "id": "29682833",
-                "name": "100 SD-Issues"
-              },
-              {
-                "id": "29683480",
-                "name": "500 S-Pre-Sale"
-              },
-              {
-                "id": "29683482",
-                "name": "700 Development"
-              },
-              {
-                "id": "29683485",
-                "name": "420 PS-Projects"
-              },
-              {
-                "id": "29683486",
-                "name": "300 SA-TAM"
-              },
-              {
-                "id": "29683495",
-                "name": "110 SD-Access"
-              },
-              {
-                "id": "29683498",
-                "name": "310 SA-vCIO"
-              },
-              {
-                "id": "29683499",
-                "name": "320 SA-Corrective"
-              },
-              {
-                "id": "29683500",
-                "name": "410 PS-Deployments"
-              },
-              {
-                "id": "29683501",
-                "name": "220 CS-Security"
-              },
-              {
-                "id": "29683502",
-                "name": "299 CS-Automation"
-              },
-              {
-                "id": "29683503",
-                "name": "200 CS-Routine"
-              },
-              {
-                "id": "29683505",
-                "name": "400 PS-Request"
-              },
-              {
-                "id": "29683519",
-                "name": "205 CS-Problem"
-              },
-              {
-                "id": "29683522",
-                "name": "800 DataCenter"
-              },
-              {
-                "id": "8",
-                "name": "210 CS-Monitoring Alert"
-              }
-            ],
-            "use_custom_instructions": true
-          },
-          {
-            "allow_removing_field": false,
-            "custom_instructions": "[see separate markdown file]",
-            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-3-custom-instructions.md",
-            "field_name": "contact",
-            "save_original_contact_as_additional_contact": false,
-            "use_client_primary_contact_if_unable_to_triage": false,
-            "use_custom_instructions": true
-          },
-          {
-            "allow_removing_field": false,
-            "custom_instructions": "[see separate markdown file]",
-            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-4-custom-instructions.md",
-            "field_name": "billingCode",
-            "use_custom_instructions": true
-          },
-          {
-            "allow_removing_field": false,
-            "custom_instructions": "[see separate markdown file]",
-            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-5-custom-instructions.md",
-            "field_name": "description",
-            "summarize_description": true,
-            "use_custom_instructions": true
-          },
-          {
-            "allow_removing_field": false,
-            "custom_instructions": "[see separate markdown file]",
-            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-6-custom-instructions.md",
-            "field_name": "dueDateTime",
-            "include_service_call_details": false,
-            "use_custom_instructions": true
-          },
-          {
-            "allow_removing_field": false,
-            "custom_instructions": "[see separate markdown file]",
-            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-7-custom-instructions.md",
-            "field_name": "priority",
-            "ignore_neo_instructions_for_priority": false,
-            "predefined_options": [],
-            "use_custom_instructions": true
-          },
-          {
-            "allow_removing_field": false,
-            "custom_instructions": "[see separate markdown file]",
-            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-8-custom-instructions.md",
-            "field_name": "title",
-            "use_custom_instructions": true
-          },
-          {
-            "allow_removing_field": false,
-            "custom_instructions": "[see separate markdown file]",
-            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-9-custom-instructions.md",
-            "field_name": "status",
-            "include_closed_statuses": false,
-            "use_custom_instructions": true
-          },
-          {
-            "allow_removing_field": false,
-            "custom_instructions": "[see separate markdown file]",
-            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-10-custom-instructions.md",
-            "field_name": "ticketCategory",
-            "use_custom_instructions": true
-          },
-          {
-            "allow_removing_field": false,
-            "custom_instructions": "[see separate markdown file]",
-            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-11-custom-instructions.md",
             "field_name": "company",
             "search_company_by": [
               "COMPANY_NAME",
@@ -195,23 +59,72 @@
           },
           {
             "allow_removing_field": false,
-            "field_name": "estimatedHours",
-            "use_custom_instructions": false
+            "custom_instructions": "[see separate markdown file]",
+            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-3-custom-instructions.md",
+            "field_name": "priority",
+            "ignore_neo_instructions_for_priority": false,
+            "use_custom_instructions": true
           },
           {
             "allow_removing_field": false,
+            "custom_instructions": "[see separate markdown file]",
+            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-4-custom-instructions.md",
+            "field_name": "dueDateTime",
+            "include_service_call_details": false,
+            "use_custom_instructions": true
+          },
+          {
+            "allow_removing_field": false,
+            "custom_instructions": "[see separate markdown file]",
+            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-5-custom-instructions.md",
+            "field_name": "queue",
+            "use_custom_instructions": true
+          },
+          {
+            "allow_removing_field": false,
+            "custom_instructions": "[see separate markdown file]",
+            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-6-custom-instructions.md",
             "field_name": "subIssueType",
             "subtype_predefined_options": [],
-            "use_custom_instructions": false
+            "use_custom_instructions": true
           },
           {
             "allow_removing_field": false,
+            "custom_instructions": "[see separate markdown file]",
+            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-7-custom-instructions.md",
             "field_name": "ticketType",
+            "use_custom_instructions": true
+          },
+          {
+            "allow_removing_field": false,
+            "custom_instructions": "[see separate markdown file]",
+            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-8-custom-instructions.md",
+            "field_name": "contact",
+            "save_original_contact_as_additional_contact": false,
+            "use_client_primary_contact_if_unable_to_triage": false,
+            "use_custom_instructions": true
+          },
+          {
+            "allow_removing_field": false,
+            "custom_instructions": "[see separate markdown file]",
+            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-9-custom-instructions.md",
+            "field_name": "ticketCategory",
+            "use_custom_instructions": true
+          },
+          {
+            "allow_removing_field": false,
+            "custom_instructions": "[see separate markdown file]",
+            "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-1-input-as-dict-fields-to-triage-10-custom-instructions.md",
+            "field_name": "billingCode",
+            "use_custom_instructions": true
+          },
+          {
+            "allow_removing_field": false,
+            "field_name": "estimatedHours",
             "use_custom_instructions": false
           }
         ],
-        "move_to_board": false,
-        "target_board_or_queue_name": null
+        "move_to_board": false
       },
       "output": {
         "credits_consumed": 0
@@ -221,11 +134,22 @@
       "action_type": "ADD_TICKET_NOTE",
       "id": "6f8ce4df-582f-460f-be7d-1cb7acf59674",
       "input_as_dict": {
-        "ask_for_feedback": false,
+        "ask_for_feedback": true,
         "custom_instructions": "[see separate markdown file]",
         "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-2-input-as-dict-custom-instructions.md",
         "note_type": "Internal Note",
         "use_custom_instructions": true
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    },
+    {
+      "action_type": "RESOLVE_TICKET",
+      "id": "83164bf9-5792-46b0-a9df-04944f681a6c",
+      "input_as_dict": {
+        "output_verbosity": "BRIEF",
+        "use_custom_instructions": false
       },
       "output": {
         "credits_consumed": 0
@@ -237,7 +161,7 @@
       "input_as_dict": {
         "continue_workflow_only_if_escalated": false,
         "custom_instructions": "[see separate markdown file]",
-        "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-3-input-as-dict-custom-instructions.md",
+        "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-4-input-as-dict-custom-instructions.md",
         "do_not_escalate_if_ticket_is_closed": true,
         "escalation_criteria": "CUSTOM_CRITERIA",
         "remove_owner_from_ticket_if_escalated": false,
@@ -269,7 +193,7 @@
         "additional_fields_to_update": {
           "new_priority": null,
           "new_queue": null,
-          "new_status": null
+          "new_status": "Ready for Next Steps"
         },
         "allow_removing_fields": false,
         "update_additional_fields": true
@@ -284,7 +208,7 @@
       "input_as_dict": {
         "autotask_wf_udf_field_name": "Notify Contact by Email",
         "custom_instructions": "[see separate markdown file]",
-        "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-6-input-as-dict-custom-instructions.md",
+        "custom_instructions_file": "agent_text/custom-instructions/25413-triage-workflow-id-25413/actions-7-input-as-dict-custom-instructions.md",
         "include_random_delay": false,
         "notification_mode": "TICKET_NOTE",
         "skip_notifications_for_closed_tickets": true,
@@ -330,21 +254,14 @@
                     "field": "creatorResourceID",
                     "id": null,
                     "operator": "!=",
-                    "value": "Blackpoint API",
+                    "value": "29682999",
                     "valueProviderInput": null
                   },
                   {
                     "field": "creatorResourceID",
                     "id": null,
                     "operator": "!=",
-                    "value": "Kodi Todd",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "creatorResourceID",
-                    "id": null,
-                    "operator": "!=",
-                    "value": "Migration Tool - AP API",
+                    "value": "29683020",
                     "valueProviderInput": null
                   }
                 ]
@@ -485,353 +402,101 @@
                 "combinator": "or",
                 "rules": [
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "ABC",
+                    "value": "FW-Managed - Internal NW",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "ASB",
+                    "value": "FW-Managed - No NW",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "BL",
+                    "value": "FW-Managed",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "BLR",
+                    "value": "FW360 - Internal NW",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "BLS",
+                    "value": "FW360",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "BSL",
+                    "value": "Hosted Service - No NW",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "BTC",
+                    "value": "Hosted Service",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "CBC",
+                    "value": "Misc Services - No NW",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "CFS",
+                    "value": "Misc Services",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "CGC",
+                    "value": "NeuralWerx",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "CLP",
+                    "value": "Residential - No NW",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "CMW",
+                    "value": "Residential",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "CSI",
+                    "value": "T&M - No NW",
                     "valueProviderInput": null
                   },
                   {
-                    "field": "companyID",
+                    "field": "company_classification",
                     "id": null,
                     "operator": "=",
-                    "value": "FAK",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "FCL",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "FFS",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "FWI",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "G3D",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "GRV",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "HFM",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "HIE",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "IIS",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "ISR",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "KES",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "KVR",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "LCF",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "LDW",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "LIL",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "MSD",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "MXM",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "NKG",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "NKS",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "OMG",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "OSG",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "PCM",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "PVB",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "QBC",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "QMI",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "RCC",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "RDC",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "RWM",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "SCI",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "SCP",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "SEC",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "SEG",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "SI",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "SPM",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "SSL",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "Shaw Communications Inc",
-                    "valueProviderInput": null
-                  },
-                  {
-                    "field": "companyID",
-                    "id": null,
-                    "operator": "=",
-                    "value": "VCS",
+                    "value": "T&M",
                     "valueProviderInput": null
                   }
                 ]
@@ -898,6 +563,13 @@
                 ]
               },
               {
+                "field": "description",
+                "id": null,
+                "operator": "doesNotContain",
+                "value": "gothamsteakhouse.com",
+                "valueProviderInput": null
+              },
+              {
                 "field": "ticketType",
                 "id": null,
                 "operator": "!=",
@@ -924,11 +596,35 @@
   "agent_settings": null,
   "audience": "MSP",
   "autonomy_type": "CHAINED_ACTIONS",
+  "callback_settings": {
+    "entity_type": "TICKET",
+    "run_only_once_per_entity": true,
+    "target_changes": [
+      {
+        "change_type": "CREATE",
+        "source_value": null,
+        "target_field": null,
+        "target_value": null,
+        "target_workflow_id": null
+      }
+    ]
+  },
+  "created_via": null,
   "entity_type": "TICKET",
   "id": "25413",
   "integrations": null,
   "name": "triage (workflow ID:25413)",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [],
+    "time_period": null,
+    "timezone": "America/Edmonton"
+  },
+  "source_template_id": null,
   "state": "ENABLED",
   "toolbox": null,
-  "trigger_type": "TRIGGERED"
+  "trigger_type": "TRIGGERED",
+  "unreleased_permission_groups": []
 }

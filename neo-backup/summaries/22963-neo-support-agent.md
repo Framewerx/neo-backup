@@ -6,8 +6,8 @@
 - Type: `CONVERSATIONAL`
 - Trigger: `NONE`
 - Entity: `TICKET`
-- Tools configured: 7
-- Tool sample: ELASTIC_REQUEST, FIND_DOCUMENTATION, FIND_TICKETS_BY_CONTENT, GET_TICKET_SUMMARIES, LOAD_SKILL … (+2 more)
+- Tools configured: 8
+- Tool sample: ELASTIC_REQUEST, FIND_DOCUMENTATION, FIND_TICKETS_BY_CONTENT, GET_TICKET_SUMMARIES, LOAD_SKILL … (+3 more)
 - Extracted text files: 1
 - `agent_text/custom-instructions/22963-neo-support-agent/agent-settings-custom-instructions.md`
 
@@ -19,4 +19,4 @@
 - `agent_text/custom-instructions/` = extracted multiline instructions for clean diffs
 - `summaries/` = short human-readable summaries
 
-_Exported at 2026-07-20T16:18:17.250749+00:00_
+_Exported at 2026-09-04T22:36:34.780176+00:00_

@@ -1,0 +1,67 @@
+[
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "27261",
+    "name": "syncerrors-noise-cancellation",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-08-21T19:28:26.951114Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "27261",
+    "name": "syncerrors-noise-cancellation",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-08-21T14:36:56.139441Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "27261",
+    "name": "syncerrors-noise-cancellation",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-08-21T14:35:43.689062Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "27261",
+    "name": "syncerrors-noise-cancellation",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-08-20T14:56:34.550043Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "27261",
+    "name": "general-noise-cancellation",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-08-20T14:55:33.202661Z"
+  }
+]

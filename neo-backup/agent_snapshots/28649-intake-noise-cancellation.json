@@ -1,0 +1,246 @@
+{
+  "access": "ALL_USERS",
+  "actions": [
+    {
+      "action_type": "ADD_TICKET_NOTE",
+      "id": "3c0c5852-6e28-47c4-a2aa-c824a9a37c8a",
+      "input_as_dict": {
+        "ask_for_feedback": false,
+        "custom_instructions": "[see separate markdown file]",
+        "custom_instructions_file": "agent_text/custom-instructions/28649-intake-noise-cancellation/actions-0-input-as-dict-custom-instructions.md",
+        "note_type": "Internal Note",
+        "use_custom_instructions": true
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    },
+    {
+      "action_type": "UPDATE_TICKET_FIELDS",
+      "id": "4c6c9929-dd79-4843-b176-d0b41f7cea19",
+      "input_as_dict": {
+        "additional_fields_to_update": {
+          "new_priority": null,
+          "new_queue": null,
+          "new_status": "Complete"
+        },
+        "allow_removing_fields": false,
+        "update_additional_fields": true
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    },
+    {
+      "action_type": "FIND_ENTITIES",
+      "id": "7c250b90-70e7-4baa-8434-d1921da3af3e",
+      "input_as_dict": {
+        "opportunity_conditions": {
+          "conditions": {
+            "combinator": "or",
+            "rules": []
+          }
+        },
+        "project_conditions": {
+          "conditions": {
+            "combinator": "or",
+            "rules": []
+          }
+        },
+        "result_entity_type": "TICKET",
+        "ticket_conditions": {
+          "conditions": {
+            "combinator": "and",
+            "rules": [
+              {
+                "combinator": "or",
+                "rules": [
+                  {
+                    "combinator": "and",
+                    "rules": [
+                      {
+                        "combinator": "or",
+                        "rules": [
+                          {
+                            "field": "title",
+                            "id": null,
+                            "operator": "contains",
+                            "value": "DMARC",
+                            "valueProviderInput": null
+                          },
+                          {
+                            "field": "title",
+                            "id": null,
+                            "operator": "contains",
+                            "value": "Report Domain",
+                            "valueProviderInput": null
+                          }
+                        ]
+                      },
+                      {
+                        "field": "ticket_content_related_to",
+                        "id": null,
+                        "operator": "=",
+                        "value": true,
+                        "valueProviderInput": "Routine DMARC aggregate report"
+                      }
+                    ]
+                  },
+                  {
+                    "combinator": "and",
+                    "rules": [
+                      {
+                        "field": "companyID",
+                        "id": null,
+                        "operator": "in",
+                        "value": [
+                          "FWI",
+                          "HCA"
+                        ],
+                        "valueProviderInput": null
+                      },
+                      {
+                        "field": "ticket_content_related_to",
+                        "id": null,
+                        "operator": "=",
+                        "value": true,
+                        "valueProviderInput": "Meraki Network Notifications "
+                      }
+                    ]
+                  },
+                  {
+                    "combinator": "and",
+                    "rules": [
+                      {
+                        "field": "companyID",
+                        "id": null,
+                        "operator": "in",
+                        "value": [
+                          "FWI",
+                          "HCA"
+                        ],
+                        "valueProviderInput": null
+                      },
+                      {
+                        "field": "ticket_content_related_to",
+                        "id": null,
+                        "operator": "=",
+                        "value": true,
+                        "valueProviderInput": "Meraki Network Notifications "
+                      }
+                    ]
+                  },
+                  {
+                    "combinator": "and",
+                    "rules": [
+                      {
+                        "field": "ticket_content_related_to",
+                        "id": null,
+                        "operator": "=",
+                        "value": true,
+                        "valueProviderInput": "Microsoft Defender for Endpoint Notifications"
+                      },
+                      {
+                        "field": "title",
+                        "id": null,
+                        "operator": "contains",
+                        "value": "Microsoft Defender for Endpoint",
+                        "valueProviderInput": null
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "combinator": "or",
+                "rules": [
+                  {
+                    "field": "queueID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "010 Client Portal",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "queueID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "020 Triage",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "queueID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "100 SD-Issues",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "queueID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "210 CS-Monitoring Alert",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "queueID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "220 CS-Security",
+                    "valueProviderInput": null
+                  }
+                ]
+              }
+            ]
+          },
+          "custom_field_conditions": null,
+          "workload_conditions": null
+        },
+        "time_entry_conditions": {
+          "conditions": {
+            "combinator": "or",
+            "rules": []
+          }
+        }
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    }
+  ],
+  "agent_settings": null,
+  "audience": "MSP",
+  "autonomy_type": "CHAINED_ACTIONS",
+  "callback_settings": {
+    "entity_type": "TICKET",
+    "run_only_once_per_entity": true,
+    "target_changes": [
+      {
+        "change_type": "CREATE",
+        "source_value": null,
+        "target_field": null,
+        "target_value": null,
+        "target_workflow_id": null
+      }
+    ]
+  },
+  "created_via": null,
+  "entity_type": "TICKET",
+  "id": "28649",
+  "integrations": null,
+  "name": "intake_noise_cancellation",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [],
+    "time_period": null,
+    "timezone": "America/Edmonton"
+  },
+  "source_template_id": null,
+  "state": "ENABLED",
+  "toolbox": null,
+  "trigger_type": "TRIGGERED",
+  "unreleased_permission_groups": [],
+  "version_timestamp": "2026-09-18T22:36:17.986124Z"
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "28483",
+    "name": "Approved Software Deployment — Datto RMM (Draft)",
+    "source_template_id": null,
+    "state": "DISABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-09-16T16:37:46.080583Z"
+  }
+]

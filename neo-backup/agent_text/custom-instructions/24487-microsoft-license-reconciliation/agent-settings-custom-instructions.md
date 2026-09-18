@@ -18,3 +18,6 @@
 3. Deduplicate — search Autotask open tickets for the same user.
 4. Create ticket — open one Autotask ticket per match.
 5. Summarize — send one internal rollup.
+
+# Accounts to ignore (do not take action or create ticket) 
+- CQ_SASKATOON@brunsdonlawrek.ca

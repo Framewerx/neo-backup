@@ -2,11 +2,11 @@
 
 - Agent ID: `25664`
 - Export label: `device-reboot-notify-closer`
-- State: `ENABLED`
+- State: `DISABLED`
 - Type: `CHAINED_ACTIONS`
 - Trigger: `SCHEDULED`
 - Entity: `TICKET`
-- Version records exported: `3`
+- Version records exported: `4`
 - Integrations: 0
 
 ## Export contents
@@ -17,4 +17,4 @@
 - `agent_text/custom-instructions/` = extracted multiline instructions for clean diffs
 - `summaries/` = short human-readable summaries
 
-_Exported at 2026-07-20T16:18:32.741334+00:00_
+_Exported at 2026-09-18T22:37:23.814229+00:00_

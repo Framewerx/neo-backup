@@ -1,0 +1,80 @@
+[
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "27351",
+    "name": "sd-printer-technician",
+    "source_template_id": null,
+    "state": "DISABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-25T22:16:24.025440Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "27351",
+    "name": "sd-printer-technician",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-25T22:16:09.177359Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "27351",
+    "name": "sd-printer-technician",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-21T21:57:13.307793Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "27351",
+    "name": "sd-printer-technician",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-21T21:53:20.438500Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "27351",
+    "name": "sd-printer-technician",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-21T21:49:01.802650Z"
+  },
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "AGENTIC",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "27351",
+    "name": "sd-printer-technician",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "TRIGGERED",
+    "version_timestamp": "2026-08-21T21:17:54.734142Z"
+  }
+]

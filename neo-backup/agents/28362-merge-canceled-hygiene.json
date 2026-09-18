@@ -1,0 +1,94 @@
+{
+  "access": "ALL_USERS",
+  "actions": [
+    {
+      "action_type": "FIND_ENTITIES",
+      "id": "b23262c4-fb16-465c-ab64-d7502436faf3",
+      "input_as_dict": {
+        "result_entity_type": "TICKET",
+        "ticket_conditions": {
+          "conditions": {
+            "combinator": "and",
+            "id": "3d1fc692-a0f9-4b5f-a062-09e4a2dab584",
+            "not": false,
+            "rules": [
+              {
+                "field": "queueID",
+                "operator": "=",
+                "value": "610 Merged-Canceled"
+              },
+              {
+                "field": "status",
+                "operator": "notIn",
+                "value": [
+                  "Canceled",
+                  "Complete",
+                  "Completed (With CSAT)",
+                  "Customer Note Added",
+                  "Duplicate",
+                  "Reopened"
+                ]
+              }
+            ]
+          }
+        },
+        "time_entry_conditions": {
+          "conditions": {
+            "combinator": "and",
+            "id": "3d1fd67f-2e90-4cbf-a979-3f81e72489f8",
+            "not": false,
+            "rules": []
+          }
+        }
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    },
+    {
+      "action_type": "UPDATE_TICKET_FIELDS",
+      "id": "c2209cff-49a0-43d9-8079-a6391b51c21d",
+      "input_as_dict": {
+        "additional_fields_to_update": {
+          "new_priority": null,
+          "new_queue": null,
+          "new_status": "Canceled"
+        },
+        "allow_removing_fields": false,
+        "update_additional_fields": true
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    }
+  ],
+  "agent_settings": null,
+  "audience": "MSP",
+  "autonomy_type": "CHAINED_ACTIONS",
+  "callback_settings": null,
+  "created_via": "EDITOR",
+  "entity_type": "TICKET",
+  "group_name": "Service Desk",
+  "group_order": 1,
+  "id": "28362",
+  "integrations": null,
+  "name": "merge-canceled-hygiene",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [
+      "2026-09-14T15:30:00Z"
+    ],
+    "time_period": {
+      "interval": 1,
+      "unit": "HOUR"
+    },
+    "timezone": "America/Edmonton"
+  },
+  "source_template_id": null,
+  "state": "ENABLED",
+  "toolbox": null,
+  "trigger_type": "SCHEDULED",
+  "unreleased_permission_groups": []
+}

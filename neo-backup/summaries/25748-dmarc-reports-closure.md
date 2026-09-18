@@ -2,11 +2,11 @@
 
 - Agent ID: `25748`
 - Export label: `DMARC-reports-closure`
-- State: `ENABLED`
+- State: `DISABLED`
 - Type: `CHAINED_ACTIONS`
 - Trigger: `SCHEDULED`
 - Entity: `TICKET`
-- Version records exported: `7`
+- Version records exported: `11`
 - Integrations: 0
 
 ## Export contents
@@ -17,4 +17,4 @@
 - `agent_text/custom-instructions/` = extracted multiline instructions for clean diffs
 - `summaries/` = short human-readable summaries
 
-_Exported at 2026-07-20T16:18:33.092398+00:00_
+_Exported at 2026-09-18T22:37:23.942274+00:00_

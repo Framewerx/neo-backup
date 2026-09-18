@@ -4,20 +4,26 @@
   "agent_settings": {
     "custom_instructions": "[see separate markdown file]",
     "custom_instructions_file": "agent_text/custom-instructions/22963-neo-support-agent/agent-settings-custom-instructions.md",
-    "model": "GPT5_4_MINI",
-    "reasoning_effort": "HIGH",
+    "model": "GPT5_6_TERRA",
+    "reasoning_effort": "XHIGH",
     "report_test_via": "INTERNAL_TICKET_NOTE",
     "subagent_fanout_enabled": false,
+    "supervised": false,
     "test_mode": false,
     "til_channel": "CHAT",
     "trigger_mode": "MENTION_ONLY"
   },
   "audience": "MSP",
   "autonomy_type": "CONVERSATIONAL",
+  "callback_settings": null,
+  "created_via": null,
   "entity_type": "TICKET",
   "id": "22963",
   "integrations": {
     "ad": {
+      "permissions": []
+    },
+    "autoelevate": {
       "permissions": []
     },
     "autotask": {
@@ -47,7 +53,13 @@
     "hudu": {
       "permissions": []
     },
+    "huntress": {
+      "permissions": []
+    },
     "itglue": {
+      "permissions": []
+    },
+    "lexful": {
       "permissions": []
     },
     "ms_graph": {
@@ -160,11 +172,28 @@
     "servicenow": {
       "permissions": []
     },
+    "sharepoint": {
+      "permissions": []
+    },
+    "syncro": {
+      "permissions": []
+    },
+    "syncro_rmm": {
+      "permissions": []
+    },
+    "threatlocker": {
+      "permissions": []
+    },
+    "unifi": {
+      "permissions": []
+    },
     "vsax_rmm": {
       "permissions": []
     }
   },
   "name": "Neo Support Agent",
+  "schedule": null,
+  "source_template_id": null,
   "state": "ENABLED",
   "toolbox": {
     "tool_settings_by_type": {
@@ -174,11 +203,15 @@
       "GET_TICKET_SUMMARIES": {},
       "LOAD_SKILL": {},
       "NEO_API_REQUEST": {},
+      "SEND_EMAIL": {
+        "require_technician_approval": false
+      },
       "WEB_FETCH": {
         "additional_allowed_hosts": []
       }
     }
   },
   "trigger_type": "NONE",
+  "unreleased_permission_groups": [],
   "version_timestamp": null
 }

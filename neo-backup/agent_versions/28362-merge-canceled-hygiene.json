@@ -1,0 +1,15 @@
+[
+  {
+    "access": "ALL_USERS",
+    "audience": "MSP",
+    "autonomy_type": "CHAINED_ACTIONS",
+    "created_via": null,
+    "entity_type": "TICKET",
+    "id": "28362",
+    "name": "merge-canceled-hygiene",
+    "source_template_id": null,
+    "state": "ENABLED",
+    "trigger_type": "SCHEDULED",
+    "version_timestamp": "2026-09-14T16:48:24.814495Z"
+  }
+]

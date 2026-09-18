@@ -2,11 +2,11 @@
 
 - Agent ID: `25538`
 - Export label: `datto-backup-closer`
-- State: `ENABLED`
+- State: `DISABLED`
 - Type: `CHAINED_ACTIONS`
 - Trigger: `SCHEDULED`
 - Entity: `TICKET`
-- Version records exported: `25`
+- Version records exported: `35`
 - Integrations: 0
 
 ## Export contents
@@ -17,4 +17,4 @@
 - `agent_text/custom-instructions/` = extracted multiline instructions for clean diffs
 - `summaries/` = short human-readable summaries
 
-_Exported at 2026-07-20T16:18:31.499359+00:00_
+_Exported at 2026-09-18T22:37:22.764204+00:00_

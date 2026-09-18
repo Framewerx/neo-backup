@@ -34,6 +34,9 @@
           }
         },
         "result_entity_type": "TICKET",
+        "single_page": false,
+        "skip_calculated_fields_on_large_datasets": false,
+        "target_ticket_id": null,
         "ticket_conditions": {
           "conditions": {
             "combinator": "and",
@@ -99,6 +102,13 @@
                     "field": "queueID",
                     "id": null,
                     "operator": "=",
+                    "value": "205 CS-Problem",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "queueID",
+                    "id": null,
+                    "operator": "=",
                     "value": "210 CS-Monitoring Alert",
                     "valueProviderInput": null
                   }
@@ -132,7 +142,28 @@
                     "field": "title",
                     "id": null,
                     "operator": "contains",
+                    "value": "Bootable Screenshot",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "title",
+                    "id": null,
+                    "operator": "contains",
                     "value": "Bootable screenshot failed",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "title",
+                    "id": null,
+                    "operator": "contains",
+                    "value": "CRITICAL ERROR for SHATO-LAP08 on Shato-S5-12",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "title",
+                    "id": null,
+                    "operator": "contains",
+                    "value": "CRITICAL ERROR for WONGRDS1",
                     "valueProviderInput": null
                   },
                   {
@@ -160,15 +191,41 @@
                     "field": "title",
                     "id": null,
                     "operator": "contains",
+                    "value": "Logs for WS12 on FNFC-DattoS5-6",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "title",
+                    "id": null,
+                    "operator": "contains",
                     "value": "[Datto Backup]",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "title",
+                    "id": null,
+                    "operator": "contains",
+                    "value": "[Datto SIRIS Backup]",
                     "valueProviderInput": null
                   }
                 ]
               },
               {
-                "field": "companyID",
+                "field": "creatorResourceID",
+                "id": null,
                 "operator": "=",
-                "value": "FWI"
+                "value": "4",
+                "valueProviderInput": null
+              },
+              {
+                "field": "priority",
+                "id": null,
+                "operator": "in",
+                "value": [
+                  "Informational",
+                  "Low"
+                ],
+                "valueProviderInput": null
               }
             ]
           },
@@ -190,12 +247,29 @@
   "agent_settings": null,
   "audience": "MSP",
   "autonomy_type": "CHAINED_ACTIONS",
+  "callback_settings": null,
+  "created_via": null,
   "entity_type": "TICKET",
   "id": "25538",
   "integrations": null,
   "name": "datto-backup-closer",
-  "state": "ENABLED",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [
+      "2026-07-06T19:00:00Z"
+    ],
+    "time_period": {
+      "interval": 10,
+      "unit": "MINUTE"
+    },
+    "timezone": "America/Edmonton"
+  },
+  "source_template_id": null,
+  "state": "DISABLED",
   "toolbox": null,
   "trigger_type": "SCHEDULED",
-  "version_timestamp": "2026-07-17T19:14:07.750745Z"
+  "unreleased_permission_groups": [],
+  "version_timestamp": "2026-09-18T22:34:53.594249Z"
 }

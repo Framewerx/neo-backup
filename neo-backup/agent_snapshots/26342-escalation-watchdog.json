@@ -1,0 +1,121 @@
+{
+  "access": "ALL_USERS",
+  "actions": [
+    {
+      "action_type": "TRIGGER_ANOTHER_WORKFLOW",
+      "id": "559dd340-a17d-458b-995b-6b041ebc980b",
+      "input_as_dict": {
+        "bypass_filter_ticket_conditions": true,
+        "workflow_id_to_trigger": 23783
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    },
+    {
+      "action_type": "FIND_ENTITIES",
+      "id": "9df1bf38-98f6-4311-8508-9d64fcfd7e53",
+      "input_as_dict": {
+        "opportunity_conditions": {
+          "conditions": {
+            "combinator": "or",
+            "rules": []
+          }
+        },
+        "project_conditions": {
+          "conditions": {
+            "combinator": "or",
+            "rules": []
+          }
+        },
+        "result_entity_type": "TICKET",
+        "ticket_conditions": {
+          "conditions": {
+            "combinator": "and",
+            "rules": [
+              {
+                "combinator": "or",
+                "rules": [
+                  {
+                    "field": "assignedResourceID",
+                    "id": null,
+                    "operator": "=",
+                    "value": "29682976",
+                    "valueProviderInput": null
+                  },
+                  {
+                    "field": "assignedResourceID",
+                    "id": null,
+                    "operator": "null",
+                    "value": "",
+                    "valueProviderInput": null
+                  }
+                ]
+              },
+              {
+                "field": "status",
+                "id": null,
+                "operator": "=",
+                "value": "Waiting Technician",
+                "valueProviderInput": null
+              }
+            ]
+          },
+          "custom_field_conditions": null,
+          "workload_conditions": null
+        },
+        "time_entry_conditions": {
+          "conditions": {
+            "combinator": "and",
+            "rules": []
+          }
+        }
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    },
+    {
+      "action_type": "ADD_TICKET_NOTE",
+      "id": "d00b2c7d-d21e-492c-8f0b-3d4bcf3a03b9",
+      "input_as_dict": {
+        "ask_for_feedback": false,
+        "custom_instructions": "[see separate markdown file]",
+        "custom_instructions_file": "agent_text/custom-instructions/26342-escalation-watchdog/actions-2-input-as-dict-custom-instructions.md",
+        "note_type": "Internal Note",
+        "use_custom_instructions": true
+      },
+      "output": {
+        "credits_consumed": 0
+      }
+    }
+  ],
+  "agent_settings": null,
+  "audience": "MSP",
+  "autonomy_type": "CHAINED_ACTIONS",
+  "callback_settings": null,
+  "created_via": null,
+  "entity_type": "TICKET",
+  "id": "26342",
+  "integrations": null,
+  "name": "escalation-watchdog",
+  "schedule": {
+    "allowed_execution_hours": null,
+    "daily_execution_windows": null,
+    "should_skip_weekends": false,
+    "start_datetimes": [
+      "2026-07-30T19:12:00Z"
+    ],
+    "time_period": {
+      "interval": 10,
+      "unit": "MINUTE"
+    },
+    "timezone": "America/Edmonton"
+  },
+  "source_template_id": null,
+  "state": "ENABLED",
+  "toolbox": null,
+  "trigger_type": "SCHEDULED",
+  "unreleased_permission_groups": [],
+  "version_timestamp": "2026-07-30T19:58:24.355529Z"
+}
